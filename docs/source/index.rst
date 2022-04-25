@@ -23,7 +23,7 @@ Contents
    :maxdepth: 6
 
    partimoine
-   ouvrageart
+   ouvrages
    api
 
 Indice and tables
