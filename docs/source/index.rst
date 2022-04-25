@@ -1,22 +1,18 @@
 Bienvenue dans la documentation ATMB !
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+La documentation couvre le périmètre du rapport d'exécution de la concesssion d'ATMB qui est obligatoire. 
 
-La documentation d'ATMB est hébérgé sur un fournisseur Read the Docs.
+Actuellement la documentation d'ATMB est hébérgé dans le cloud chez Read the Docs.
 
-Check out the :doc:`usage` section for further information, including
+Check out the :doc:`patrimoine` section for further information, including
 how to :ref:`installation` the project.
-
 
 .. note::
 
-   This project is under active development.
+   La documentation est en cours de production.
 
-Contents
+Contenu
 --------
 
 .. toctree::
