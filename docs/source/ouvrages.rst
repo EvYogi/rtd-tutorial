@@ -3,21 +3,16 @@ Ouvrages d'art
 
 .. _installation:
 
-
 .. autosummary::
    :toctree: generated
 
    lumache
-   
-* This is a bulleted list.
-* It has two items, the second
-  item uses two lines.
   
-*Enjeux
+* Enjeux 
 
 Conservation du patrimoine / sécurité des usagers.
 
-*Description 
+* Description 
 
 Etat de surface des chaussées.
 
@@ -30,8 +25,8 @@ L’indicateur est calculé annuellement.
 
 L’indicateur s’applique qu’aux sections courantes d’autoroutes et exclut notamment les bifurcations, les échangeurs, les aires et les plateformes de péage. La méthode ne s’applique pas aux chaussées béton. 
 
-Objectif
-----------
+* Objectif
+
 L’indicateur est assorti de deux objectifs :
 - Objectif 1 : au moins 90% des notes >=3
 - Objectif 2 : au moins 95% des notes >=2
