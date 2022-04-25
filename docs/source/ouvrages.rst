@@ -3,10 +3,14 @@ Ouvrages d'art
 
 .. _installation:
 
-.. autosummary::
-   :toctree: generated
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: PATRIMOINE
 
-   lumache
+   partimoine
+   ouvrages
+   api
   
 * Enjeux 
 
