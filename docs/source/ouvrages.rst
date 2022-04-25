@@ -8,7 +8,7 @@ Ouvrages d'art
    :hidden:
    :caption: PATRIMOINE
 
-   partimoine
+   patrimoine
    ouvrages
    api
   
