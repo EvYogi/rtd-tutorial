@@ -1,10 +1,5 @@
 API
 ===
-
-.. autosummary::
-   :toctree: generated
-
-   lumache
    
 * This is a bulleted list.
 * It has two items, the second
