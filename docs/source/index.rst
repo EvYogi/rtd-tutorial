@@ -22,6 +22,6 @@ Contenu
    :hidden:
    :caption: PATRIMOINE
 
-   /partimoine
-   /ouvrages
-   /api
+   partimoine
+   ouvrages
+   api
