@@ -4,7 +4,7 @@ API
 .. autosummary::
    :toctree: generated
 
-   ATMB
+   lumache
    
 * This is a bulleted list.
 * It has two items, the second
