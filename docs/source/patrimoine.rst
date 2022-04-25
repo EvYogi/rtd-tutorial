@@ -3,7 +3,11 @@ Patrimoine
 
 .. _installation:
 
+.. autosummary::
+   :toctree: generated
 
+   lumache
+  
 Enjeux
 ------------
 
