@@ -1,8 +1,6 @@
 Ouvrages d'art
 ================
 
-.. _installation:
-
 * Enjeux 
 
 Conservation du patrimoine / sécurité des usagers.
