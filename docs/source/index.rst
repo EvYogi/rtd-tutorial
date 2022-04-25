@@ -20,7 +20,6 @@ Contents
 --------
 
 .. toctree::
-   :maxdepth: 6
 
    partimoine
    ouvrages
@@ -29,4 +28,5 @@ Contents
 Indice and tables
 ==================
 
-*:ref: `genindex` 
+*:ref: `genindex`
+*:ref: `modindex`
