@@ -20,7 +20,13 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 6
 
    partimoine
    ouvrageart
    api
+
+Indice and tables
+==================
+
+*:ref: `genindex` 
