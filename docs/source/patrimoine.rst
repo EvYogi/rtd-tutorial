@@ -1,8 +1,7 @@
 Patrimoine
 ==========
 
-Enjeux
----------
+* Enjeux
 
 Conservation du patrimoine.
 
