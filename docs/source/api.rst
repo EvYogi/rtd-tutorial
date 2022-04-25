@@ -10,3 +10,12 @@ API
 
 #. This is a numbered list.
 #. It has two items too.
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: PATRIMOINE
+
+   partimoine
+   ouvrages
+   api
