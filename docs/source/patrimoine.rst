@@ -3,8 +3,6 @@ Patrimoine
 
 .. _installation:
 
-Etat de la structure des chaussées
-------------
 
 Enjeux
 ------------
