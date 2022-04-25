@@ -16,6 +16,6 @@ API
    :hidden:
    :caption: PATRIMOINE
 
-   partimoine
+   patrimoine
    ouvrages
    api
