@@ -3,15 +3,6 @@ Ouvrages d'art
 
 .. _installation:
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: PATRIMOINE
-
-   patrimoine
-   ouvrages
-   api
-  
 * Enjeux 
 
 Conservation du patrimoine / sécurité des usagers.
