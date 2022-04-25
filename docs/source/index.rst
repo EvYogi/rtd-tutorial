@@ -20,5 +20,5 @@ Contents
 
    usage
    api
-   ouvrage
+   ouvrages
    patrimoine
