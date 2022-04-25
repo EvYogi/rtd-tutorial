@@ -3,15 +3,6 @@ Patrimoine
 
 .. _installation:
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: PATRIMOINE
-
-   patrimoine
-   ouvrages
-   api
-
 Enjeux
 ---------
 
