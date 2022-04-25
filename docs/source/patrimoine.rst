@@ -1,8 +1,6 @@
 Patrimoine
 ==========
 
-.. _installation:
-
 Enjeux
 ---------
 
