@@ -21,6 +21,7 @@ Contents
 
 .. toctree::
 
+   partimoine
    chaussée
-   ouvrage d'art
+   ouvrageart
    api
