@@ -1,5 +1,5 @@
-Chaussées
-=====
+Patrimoine
+==========
 
 .. _installation:
 
