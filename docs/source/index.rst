@@ -6,7 +6,7 @@ Bienvenue dans la documentation ATMB !
 
    La documentation est en cours de production.
 
-La documentation couvre le périmètre du rapport d'exécution de la concesssion d'ATMB. Le rapport comprend, notamment :
+La documentation couvre le périmètre du rapport d'exécution de la concesssion d'ATMB qui comprend, notamment :
 
 1. Les données comptables et économiques ; 
 2. Un état des variations du patrimoine immobilier intervenues dans le cadre du contrat ;
