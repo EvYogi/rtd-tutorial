@@ -28,7 +28,7 @@ Source de données
    Fichiers Excel fournis par le prestataire et stockés sur le réseau. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
    
 .. figure:: ISTRU-tableau-exemple.png
-   :width: 80%
+   :width: 50%
    :align: center
    :alt: Exemple de tableau de la répartition de calcul 
    
@@ -37,6 +37,8 @@ Source de données
    :width: 50%
    :align: center
    :alt: Exemple de graphe
+
+
 
 
 
