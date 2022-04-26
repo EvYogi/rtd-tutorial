@@ -17,6 +17,7 @@ Contents
 --------
 
 .. toctree::
+   :caption: Patrimoine
 
    ouvrages
    chaussees
