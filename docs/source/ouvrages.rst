@@ -40,13 +40,13 @@ Fichiers Excel fournit par le prestataire et stockés sur le réseau. En 2021, l
 
 Sécurité sur ouvrage d'art
 ---------------------------
-*Enjeux
-*Description
-*Méthode de calculs
-*Objectif
-*Mécathisme de pénalité
-*Propriétaire de données
-*Source de données
+* Enjeux
+* Description
+* Méthode de calculs
+* Objectif
+* Mécathisme de pénalité
+* Propriétaire de données
+* Source de données
 
 Fonctionnalité des ouvrages d'art
 ---------------------------------
