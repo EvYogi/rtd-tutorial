@@ -43,18 +43,17 @@ La section adresse les indicateurs liés à l'accidentologie et la viabilité hi
    
    accidentologie
    viabilitehivernale
-   usage
-   api
 
-Informations sur le trafic routier
-----------------------------------
+
+Informations sur l'exploitation routière
+------------------------------------------
 
 La section adresse les indicateurs liés au trafic routier. 
 
 .. toctree::
-   :caption: Trafic routier
+   :caption: Exploitation routière
    
-   trafic
+   exploitationroutiere
 
 
 Environnement Faune Flore
