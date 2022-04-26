@@ -51,23 +51,23 @@ Sécurité sur ouvrage d'art
 Fonctionnalité des ouvrages d'art
 ---------------------------------
 
-*Enjeux
-*Description
-*Méthode de calculs
-*Objectif
-*Mécathisme de pénalité
-*Propriétaire de données
-*Source de données
+* Enjeux
+* Description
+* Méthode de calculs
+* Objectif
+* Mécathisme de pénalité
+* Propriétaire de données
+* Source de données
 
 Investissements consacrés aux ouvrages d’art
 --------------------------------------------
 
-*Enjeux
-*Description
-*Méthode de calculs
-*Objectif
-*Mécathisme de pénalité
-*Propriétaire de données
-*Source de données
+* Enjeux
+* Description
+* Méthode de calculs
+* Objectif
+* Mécathisme de pénalité
+* Propriétaire de données
+* Source de données
 
 
