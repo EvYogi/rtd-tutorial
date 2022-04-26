@@ -39,6 +39,6 @@ Contents
 .. toctree::
    :caption: Satisfaction client
    
-   satiscationclients
+   satisfactionclients
    usage
    api
