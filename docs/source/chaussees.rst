@@ -27,15 +27,16 @@ Propriétaire de donnnées
 Source de données
    Fichiers Excel fournis par le prestataire et stockés sur le réseau. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
    
-.. figure:: /ISTRU-tableau-exemple.png
+.. figure:: ISTRU-tableau-exemple.png
    :width: 80%
    :align: center
-   :alt: Exemple de tableau de la répartition
+   :alt: Exemple de tableau de la répartition de calcul 
+   
 
-.. figure:: /ISTRU-tout-reseau.png
-   :width: 80%
+.. figure:: ISTRU-tout-reseau.png
+   :width: 50%
    :align: center
-   :alt: Exemple de calculs
+   :alt: Exemple de graphe
 
 
 
