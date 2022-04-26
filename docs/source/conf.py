@@ -4,7 +4,7 @@
 
 project = 'ATMB'
 copyright = '2022, ATMB'
-author = 'Eve Epanchina'
+author = 'Réalisé par la DSTI'
 
 release = '0.1'
 version = '0.1.0'
