@@ -1,13 +1,26 @@
 Bienvenue dans la documentation ATMB !
 =======================================
 
-La documentation couvre le périmètre du rapport d'exécution de la concesssion d'ATMB qui doit être rendu tous les ans par les sociétés de concession des autoroutes.
+La documentation couvre le périmètre du rapport d'exécution de la concesssion d'ATMB. Le rapport comprend, notamment :
 
-Actuellement la documentation d'ATMB est hébérgé dans le cloud chez Read the Docs.
+1. Les données comptables et économiques ; 
+2. Un état des variations du patrimoine immobilier intervenues dans le cadre du contrat ;
+3. Une analyse de la qualité des ouvrages ou des services demandés au concessionnaire, 
+   comportant tout élément qui permette d'apprécier la qualité des ouvrages et des services exploités 
+   et les mesures proposées par le concessionnaire pour une meilleure satisfaction des usagers. 
+
+La qualité des ouvrages ou des services est notamment appréciée à partir d'indicateurs, proposés par le concessionnaire ou demandés par l'autorité concédante et définis par voie contractuelle.
+
+   **Le rapport d'exécution de la concession** est un rapport annuel comportant 
+   notamment les comptes retraçant la totalité des opérations afférentes 
+   à l’exécution du contrat deconcession et une analyse de la qualité des ouvrages
+   et des services. Ce rapport est produit chaque année avant le 1er juin (article R. 3131-2, Code de la commande publique).
+
 
 .. note::
 
    La documentation est en cours de production.
+
 
 
 Bilans physiques et financiers des opérations d'entretien du partimoine
