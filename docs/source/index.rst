@@ -29,19 +29,10 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
    chaussees
    ouvrages
 
-
-La section décrit les indicateurs associés à la satifaction clients.
-
 .. toctree::
    :caption: Satisfaction client
    
    satisfactionclients
-   
-   
-Indicateurs de sécurité
-------------------------
-
-La section adresse les indicateurs liés à l'accidentologie et la viabilité hivernale. 
 
 .. toctree::
    :caption: Sécurité
@@ -49,22 +40,10 @@ La section adresse les indicateurs liés à l'accidentologie et la viabilité hi
    accidentologie
    viabilitehivernale
 
-
-Informations sur l'exploitation routière
-------------------------------------------
-
-La section adresse les indicateurs liés au trafic routier. 
-
 .. toctree::
    :caption: Exploitation routière
    
    exploitationroutiere
-
-
-Environnement Faune Flore
-------------------------
-
-La section adresse les indicateurs liés aux mesures engagée en faveur du développement durable.
 
 .. toctree::
    :caption: Développement durable
