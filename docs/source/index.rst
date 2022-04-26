@@ -1,6 +1,11 @@
 Bienvenue dans la documentation ATMB !
 =======================================
 
+
+.. note::
+
+   La documentation est en cours de production.
+
 La documentation couvre le périmètre du rapport d'exécution de la concesssion d'ATMB. Le rapport comprend, notamment :
 
 1. Les données comptables et économiques ; 
@@ -8,15 +13,12 @@ La documentation couvre le périmètre du rapport d'exécution de la concesssion
 3. Une analyse de la qualité des ouvrages ou des services demandés au concessionnaire, 
    à partir d'indicateurs proposés et définis par le concessionnaire par voie contractuelle. 
 
-   **Le rapport d'exécution de la concession** est un rapport annuel comportant 
-   notamment les comptes retraçant la totalité des opérations afférentes 
-   à l’exécution du contrat deconcession et une analyse de la qualité des ouvrages
-   et des services. Ce rapport est produit chaque année avant le 1er juin (article R. 3131-2, Code de la commande publique).
+**Le rapport d'exécution de la concession** est un rapport annuel comportant
+notamment les comptes retraçant la totalité des opérations afférentes 
+à l’exécution du contrat deconcession et une analyse de la qualité des ouvrages
+et des services. Ce rapport est produit chaque année avant le 1er juin (article R. 3131-2, Code de la commande publique).
 
 
-.. note::
-
-   La documentation est en cours de production.
 
 
 
