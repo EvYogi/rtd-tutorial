@@ -18,7 +18,7 @@ Contents
 
 .. toctree::
 
-   usage
-   api
    ouvrages
    chaussees
+   usage
+   api
