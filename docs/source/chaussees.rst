@@ -1,7 +1,7 @@
 Entretien de la chaussée
 ========================
 
-Indicateur ISTRU : État de structure des chaussées
+Indicateur ISTRU : État structurel de la chaussée
 ----------------------------------------------------
 
 
@@ -14,9 +14,24 @@ Description
 Méthode de calcul
    L’indicateur « ISTRU » calcule la proportion des chaussées en état structurel dégradé, en croisant deux indices intermédiaires résultats de la combinaison d’index unitaires de dégradation de surface et d’uni petites ondes dont les principes sont exposés en annexe à la présente fiche. 
    La périodicité d’auscultation est de 3 ans. Les voies lentes dans les deux sens de circulation des sections courantes d’autoroutes à l’exclusion notamment des bifurcations, des échangeurs, des aires et des plateformes de péage.  
+   La méthodologie de calcul de l'indicateur est annexée au contrat de concession en cours et disponible sur :  
 
 Objectif
-   NA
+   L’indicateur est assorti de deux objectifs :
+      * Objectif 1 : 37,5% des notes >=3
+      * Objectif 2 : 93,4% des notes >=2
+
+
+.. figure:: ISTRU-tableau-exemple.png
+   :width: 50%
+   :align: center
+   :alt: Résultats de calcul 
+   
+
+.. figure:: ISTRU-tout-reseau.png
+   :width: 50%
+   :align: center
+   :alt: Exemple de graphe
 
 Mécanisme de pénalité
    NA
@@ -24,20 +39,9 @@ Mécanisme de pénalité
 Propriétaire de donnnées
    2D2I
 
-Source de données
-   Fichiers Excel fournis par le prestataire et stockés sur le réseau. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
+Source de données BD / rapport BO
+   Les données sont collectées par le prestataire spécialisé et envoyées en fichier Excel fournis à la 2D2I. Les calculs sont également réalisés par le prestataire. En 2021, le prestataire était NextRoad et en 2021 Ginger. Il n'existe pas de rapport BO.
    
-.. figure:: ISTRU-tableau-exemple.png
-   :width: 50%
-   :align: center
-   :alt: Exemple de tableau de la répartition de calcul 
-   
-
-
-.. figure:: ISTRU-tout-reseau.png
-   :width: 50%
-   :align: center
-   :alt: Exemple de graphe
 
 
 
