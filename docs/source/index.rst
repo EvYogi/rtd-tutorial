@@ -6,10 +6,7 @@ La documentation couvre le périmètre du rapport d'exécution de la concesssion
 1. Les données comptables et économiques ; 
 2. Un état des variations du patrimoine immobilier intervenues dans le cadre du contrat ;
 3. Une analyse de la qualité des ouvrages ou des services demandés au concessionnaire, 
-   comportant tout élément qui permette d'apprécier la qualité des ouvrages et des services exploités 
-   et les mesures proposées par le concessionnaire pour une meilleure satisfaction des usagers. 
-
-La qualité des ouvrages ou des services est notamment appréciée à partir d'indicateurs, proposés par le concessionnaire ou demandés par l'autorité concédante et définis par voie contractuelle.
+   à partir d'indicateurs proposés et définis par le concessionnaire par voie contractuelle. 
 
    **Le rapport d'exécution de la concession** est un rapport annuel comportant 
    notamment les comptes retraçant la totalité des opérations afférentes 
