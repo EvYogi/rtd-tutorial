@@ -21,4 +21,4 @@ Contents
    usage
    api
    ouvrages
-   patrimoine
+   chaussees
