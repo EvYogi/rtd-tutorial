@@ -26,6 +26,8 @@ Propriétaire de donnnées
 
 Source de données
    Fichiers Excel fournis par le prestataire et stockés sur le réseau. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
+   
+   
 
 
 Indicateur IQRA: État de surface des chaussées IQRA
