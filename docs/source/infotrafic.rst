@@ -1,0 +1,56 @@
+Trafic routier
+===============
+
+Délai entre événement et message Radio
+---------------------------------------
+
+* Enjeux
+* Description
+* Méthode de calcul
+* Objectif
+* Mécathisme de pénalité
+* Propriétaire de données
+* Source de données
+
+Délai entre événement et message PMV
+-------------------------------------
+
+  Définition: panneaux à messages variables (PMV)
+
+* Enjeux
+* Description
+* Méthode de calcul
+* Objectif
+* Mécathisme de pénalité
+* Propriétaire de données
+* Source de données
+
+
+Indicateurs de dépannage PL / VL
+--------------------------------
+
+Définition : PL = poids lours, VL = véhicules legers
+  Préciser le nombre total d'intervention et % de depannages sur place en distinquant les PL et les VL.
+
+* Enjeux
+* Description
+* Méthode de calcul
+* Objectif
+* Mécathisme de pénalité
+* Propriétaire de données
+* Source de données
+
+Intervention sur événement
+---------------------------
+
+1. Intervention dans au moins 80% des cas,  24mn de jour  et 36 mn de nuit
+2. Intervention sur événements de durée supérieure à 4 heures (unités)
+
+* Enjeux
+* Description
+* Méthode de calcul
+* Objectif
+* Mécathisme de pénalité
+* Propriétaire de données
+* Source de données
+
