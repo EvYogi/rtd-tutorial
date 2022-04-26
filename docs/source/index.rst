@@ -31,8 +31,8 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
 .. toctree::
    :caption: Patrimoine
 
-   ouvrages
    chaussees
+   ouvrages
 
 Qualité de service
 --------------------
