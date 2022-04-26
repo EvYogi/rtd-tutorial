@@ -15,10 +15,10 @@ how to :ref:`installation` the project.
    La documentation est en cours de production.
 
 
-Patrimoine
------------
+Bilans physiques et financiers des opérations d'entretien du partimoine
+------------------------------------------------------------------------
 
-La section décrit les indicateurs associés à l'entretien des chaussées et des ouvrages d'art présents sur le réseau.
+Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs associés à l'entretien des chaussées et des ouvrages d'art présents sur le réseau ATMB.
 
 
 .. toctree::
@@ -27,7 +27,7 @@ La section décrit les indicateurs associés à l'entretien des chaussées et de
    ouvrages
    chaussees
 
-Satisfaction client
+Qualité de service
 --------------------
 
 La section décrit les indicateurs associés à la satifaction clients.
@@ -38,8 +38,8 @@ La section décrit les indicateurs associés à la satifaction clients.
    satisfactionclients
    
    
-Sécurité
----------
+Indicateurs de sécurité
+------------------------
 
 La section adresse les indicateurs liés à l'accidentologie et la viabilité hivernale. 
 
@@ -50,3 +50,24 @@ La section adresse les indicateurs liés à l'accidentologie et la viabilité hi
    viabilitehivernale
    usage
    api
+
+Information sur le trafic routier
+----------------------------------
+
+La section adresse les indicateurs liés au trafic routier. 
+
+.. toctree::
+   :caption: Trafic routier
+   
+   trafic
+
+
+Environnement Faune Flore
+------------------------
+
+La section adresse les indicateurs liés aux mesures engagée en faveur du développement durable.
+
+.. toctree::
+   :caption: Développement durable
+   
+   developpementdurable
