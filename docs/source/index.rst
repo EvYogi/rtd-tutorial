@@ -47,6 +47,6 @@ La section adresse les indicateurs liés à l'accidentologie et la viabilité hi
    :caption: Sécurité
    
    accidentologie
-   viabilitéhivernale
+   viabilitehivernale
    usage
    api
