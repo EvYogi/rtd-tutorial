@@ -40,7 +40,7 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
    viabilitehivernale
 
 .. toctree::
-   :caption: Exploitation routière
+   :caption: Information sécurité trafic
    
    exploitationroutiere
 
