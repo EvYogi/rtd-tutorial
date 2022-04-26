@@ -51,7 +51,7 @@ La section adresse les indicateurs liés à l'accidentologie et la viabilité hi
    usage
    api
 
-Information sur le trafic routier
+Informations sur le trafic routier
 ----------------------------------
 
 La section adresse les indicateurs liés au trafic routier. 
