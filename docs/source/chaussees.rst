@@ -33,12 +33,11 @@ Source de données
    :alt: Exemple de tableau de la répartition de calcul 
    
 
+
 .. figure:: ISTRU-tout-reseau.png
    :width: 50%
    :align: center
    :alt: Exemple de graphe
-
-
 
 
 
@@ -49,7 +48,7 @@ Enjeux
       Conservation du patrimoine / sécurité des usagers.
 
 Description
-      État L'indicateur mesure la surface des chaussées.
+      L'indicateur mesure la surface des chaussées.
 
 Méthode de calcul
       La méthode prend en compte les mesures macro-texture, de CFT (coefficient de frottement transversal), d’uni longitudinal (ondes courtes) et d’orniérage. Ces deux index unitaires sont croisés deux à deux afin de définir un indicateur adhérence et un indicateur d’uni. Ces deux indicateurs sont ensuite croisés à l’aide d’un système matriciel pour définir un indicateur global dénommé « indicateur de surface ». L’indicateur est calculé annuellement. L’indicateur s’applique qu’aux sections courantes d’autoroutes et exclut notamment les bifurcations, les échangeurs, les aires et les plateformes de péage. La méthode ne s’applique pas aux chaussées en béton. 
