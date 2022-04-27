@@ -1,67 +1,121 @@
 Ouvrages d'art
 ================
 
-Etat des ouvrages d’art (ouvrages d'ouverture >2m)
+Etat structurel des ouvrages d’art (ouvrages d'ouverture >2m)
 ---------------------------------------------------------------
 
-* **Enjeux**: Conservation du patrimoine / sécurité des usagers.
+Enjeux
+  Conservation du patrimoine.
 
-* **Description**: Etat de surface des chaussées.
+Description
+  L'indicateur mesure un état individuel de chacun des ouvrages d’art.
 
-* **Méthode de calcul**: La méthode prend en compte les mesures marco-texture, de CFT (coefficient de frottement transversal), d’uni longitudinal (ondes courtes) et d’orniérage. Ces deux index unitaires sont croisés deux à deux afin de définir un indicateur adhérence et un indicateur d’uni. 
-* Ces deux indicateurs sont ensuite croisés à l’aide d’un système matriciel pour définir un indicateur global dénommé « indicateur de surface ». 
+Méthode de calcul
+  Méthode de cotation IQOA. 
+  
+  Chaque ouvrage d’art fait l’objet d’une inspection selon l’ITSOA et d’une cotation par ATMB. Les cotations sont réparties sur l’échelle de 1 à 3. 
+  Chaque année ATMB évalue le pourcentage du nombre d’ouvrages d’art classés en 3 et 3U. 
+  
+  L’indicateur est calculé annuellement. Inspection systèmatique regulière de tous les ouvrages comportant une ouverture de plus de 2 m. 
+  
+  L’indicateur s’applique qu’aux sections courantes d’autoroutes et exclut notamment les bifurcations, les échangeurs, les aires et les plateformes de péage. La méthode ne s’applique pas aux chaussées béton. 
 
-* L’indicateur est calculé annuellement. 
+Objectif
+  L’objectif est d’atteindre en fin contrat d’entreprise puis annuellement : 
+    - Objectif 1 :  0% d'ouvrages classés 3U sauf ouvrages devenus 3U en cours de contrat : diagnostic et mesures conservatoires prises dans les 2 années suivant le classement en 3U  
+    - Objectif 2 : moins de 5% d'ouvrages classés en 3 et 3U sur le réseau autoroutier et 10% maximum sur la RN 205 
 
-L’indicateur s’applique qu’aux sections courantes d’autoroutes et exclut notamment les bifurcations, les échangeurs, les aires et les plateformes de péage. La méthode ne s’applique pas aux chaussées béton. 
+Mécanisme de pénalité
+  La pénalité s’applique en fin contrat de plan puis annuellement en cas de non atteinte de l’un et/ou l’autre des deux objectifs. En 
 
-* Objectif
+Propriétaire de données
+  2D2I
 
-L’indicateur est assorti de deux objectifs :
-- Objectif 1 : au moins 90% des notes >=3
-- Objectif 2 : au moins 95% des notes >=2
-
-* Mécanisme de pénalité
-
-La pénalité s’applique dès qu’un des deux objectifs n’est pas atteint.
-
-*Propriétaire de données
-2D2I
-
-*Source de données
-
-Fichiers Excel fournit par le prestataire et stockés sur le réseau. En 2021, le prestataire retenu était NextRoad et en 2021 Ginger.
+Source de données
+  Fichiers Excel fournit par le prestataire et stockés sur le réseau. En 2021, le prestataire retenu était NextRoad et en 2021 Ginger.
 
 Sécurité sur ouvrage d'art
 ---------------------------
-* Enjeux
-* Description
-* Méthode de calculs
-* Objectif
-* Mécathisme de pénalité
-* Propriétaire de données
-* Source de données
+Enjeux
+  Sécurité des usagers.
+  
+Description
+  Mise en cause de la sécurité des usagers du fait d’un ouvrage d’art.
+
+Méthode de calculs
+  À chaque événement impactant un ouvrage d'art et susceptible d’avoir un impact sur la sécurité des usagers ainsi qu’à chaque inspection, ATMB doit vérifier la cotation « sécurité » de celui -ci au regard des critères de la cotation “S” de l’IQOA. 
+  
+  La liste des ouvrages classés en "S” est tenue à jour par ATMB. 
+  
+  Le cas échéant, l’ouvrage ainsi coté “S” est ajouté sans délai à la liste des ouvrages classés “S" avec sa date de classement. La date de sortie de cette liste correspond à la mise en œuvre de travaux définitifs ou provisoires de sécurité permettant le déclassement “S” de l’ouvrage.       
+
+Objectif
+  L’objectif est, dans une même semaine, de ne pas avoir plus de 2 ouvrages d’art classés “S” étant restés classés plus de 13 semaines.     
+  
+Mécathisme de pénalité
+  Constat et déclenchement.  
+  La pénalité s’applique pour chaque ouvrage classé “S” depuis plus de 13 semaines au-delà de 2 simultanément (le décompte des semaines se fait en année glissante).  
+
+Propriétaire de données
+  2D2I
+  
+Source de données
+  Fichier Excel ???
 
 Fonctionnalité des ouvrages d'art
 ---------------------------------
 
-* Enjeux
-* Description
-* Méthode de calculs
-* Objectif
-* Mécathisme de pénalité
-* Propriétaire de données
-* Source de données
+Enjeux
+  Conservation du patrimoine.
+
+Description
+  Dépassement d’un seuil de fonctionnalité des ouvrages d’art au travers de deux paramètres : la portance et la hauteur libre dégagée.
+
+Méthode de calculs
+  ATMB s’assure de la hauteur libre et de la portance des ouvrages d’art en regard de ses obligations contractuelles et réglementaires. Un état des lieux est fait la première année du contrat pour spécifier la portance et la hauteur libre. 
+  ATMB maintient un fichier des hauteurs libres sous ouvrage et de la portance selon un processus qui lui est propre. L’écart est caractérisé par rapport aux annexes techniques au cahier des charges (PS, PI dans le DPAC) ou par rapport à une convention de remise ou par rapport aux PV d’inspection de travaux avant mise en service.
+  Chaque année ATMB met à jour le fichier et signale tous les dépassements de seuils. 
+
+Périmètre
+  Tous les ouvrages d’une ouverture de plus de 2 m situés dans le DPAC et ouverts à la circulation publique.
+  
+Objectif
+  Annuellement et sauf dérogations validées par le concédant lors de l’état initial :
+- 100% des passages supérieurs doivent avoir une hauteur libre conforme
+- 100% des passages inférieurs doivent avoir une portance réglementaire. 
+
+
+Mécathisme de pénalité
+  La pénalité s’applique annuellement pour chaque ouvrage d’art qualifié « non fonctionnel » non remis en conformité et ne faisant pas l’objet d’une dérogation. 
+
+
+Propriétaire de données
+  2D2I
+
+Source de données
+  ??? 
 
 Investissements consacrés aux ouvrages d’art
---------------------------------------------
+---------------------------------------------
 
-* Enjeux
-* Description
-* Méthode de calculs
-* Objectif
-* Mécathisme de pénalité
-* Propriétaire de données
-* Source de données
+Enjeux
+  Conservation du patrimoine. 
+  
+Description
+
+Méthode de calculs
+  
+
+Objectif
+  
+
+Mécathisme de pénalité
+  
+
+Propriétaire de données
+  
+
+Source de données
+  
 
 
