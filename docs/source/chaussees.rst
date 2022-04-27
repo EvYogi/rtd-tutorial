@@ -34,7 +34,7 @@ Objectif
    :alt: Exemple de graphe
 
 Mécanisme de pénalité
-   NA
+   Appliqué en cas de non-respect des seuils.
 
 Propriétaire de donnnées
    2D2I
