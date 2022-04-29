@@ -8,7 +8,7 @@ Enjeux
   Préserver l'environnement. 
  
 Description
-   L'indicateur mesure le volume d'eau consommé par la société. Affichier une baisse tendantielle dans la consommation d'eau.
+   L'indicateur mesure le volume d'eau consommé par la société.
 
 Méthode de calcul
   Prélevement depuis le compteur.
