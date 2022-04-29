@@ -48,3 +48,8 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
    :caption: Développement durable
    
    developpementdurable
+   
+.. toctree::
+   :caption: Bilan social
+   
+   bilansocial
