@@ -8,7 +8,9 @@ Enjeux
   Services aux usagers / qualité.
 
 Description
-  Faire un bilan des solliciations récues en classsant en distiguant ``réclamations`` et ``régularisations``. Le bilan met en évidence les différents types de sollicitation : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
+  Faire un bilan des solliciations récues en classsant en distiguant ``réclamations`` et ``régularisations``. 
+  
+  Le bilan met en évidence les différents types de sollicitation : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
   Le bilan des réclamtions est annexé au rapport d'exécution de la concession (Annexe N°20). 
 
 Méthode de calcul::
@@ -76,7 +78,7 @@ Méthode de calcul
 .. figure:: delaireponse
    :width: 50%
    :align: center
-   :alt: Le pourcentage de réponses jour par jour à partir du 11ème jour.
+   :alt: Le pourcentage de réponses jour par jour à partir du 11ème jour
    
 Objectif
   NA
