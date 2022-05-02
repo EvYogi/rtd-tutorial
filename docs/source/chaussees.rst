@@ -39,10 +39,11 @@ Mécanisme de pénalité
 Propriétaire de donnnées
    2D2I
 
-Source de données BD / rapport BO
+Source de données
    Les données sont collectées par le prestataire spécialisé et envoyées en fichier Excel fournis à la 2D2I. Les calculs sont également réalisés par le prestataire. En 2021, le prestataire était NextRoad et en 2021 Ginger. Il n'existe pas de rapport BO.
    
-
+Rapport BO
+  ``Non existant``
 
 
 Indicateur IQRA: État de surface des chaussées IQRA
@@ -70,4 +71,6 @@ Propriétaire de données
 
 Source de données
       Fichiers Excel fournis par le prestataire et stockés sur le réseau. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
-
+      
+Rapport BO
+  ``Non existant``
