@@ -11,8 +11,11 @@ Description
   Faire un bilan des solliciations récues en classsant en distiguant ``réclamations`` et ``régularisations``. Le bilan met en évidence les différents types de sollicitation : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
   Le bilan des réclamtions est annexé au rapport d'exécution de la concession (Annexe N°20). 
 
-Méthode de calcul
-  Pour chaque solliciation choisir la variable ``X`` et la variable ``Y`` pour calculer le nombre de sollicitations par type ``réclamation`` ou ``régularisation``. 
+Méthode de calcul::
+
+  Pour chaque solliciation,
+  choisir la variable ``X`` et la variable ``Y`` 
+  pour calculer le nombre de sollicitations par type ``réclamation`` ou ``régularisation``. 
  
 Objectif
   NA
@@ -96,12 +99,28 @@ Nombre de réclamations par milliard de kilomètres parcourus
 ------------------------------------------------------------
 
 Enjeux
-* Description
-* Méthode de calcul
-* Objectif
-* Mécathisme de pénalité
-* Propriétaire de données
-* Source de données
+  Services aux usagers / confiance.
+
+Description
+  Ramener le nombre de réclamations récues (sauf régularisation) aux données du trafic.  
+  
+Méthode de calcul
+  ::
+  
+Objectif
+  NA
+
+Mécathisme de pénalité
+  NA
+
+Propriétaire de données
+  Direction Clientèle
+
+Source de données
+  Dynamics
+
+Rapport BO
+  ``Non existant``
 
 Qualité des aires de repos
 --------------------------
