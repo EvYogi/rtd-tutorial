@@ -46,8 +46,8 @@ Rapport BO
   ``Non existant``
 
 
-Indicateur IQRA: État de surface des chaussées IQRA
-----------------------------------------------------
+Indicateur IQRA: État de surface des chaussées
+-----------------------------------------------
 
 Enjeux
       Conservation du patrimoine / sécurité des usagers.
