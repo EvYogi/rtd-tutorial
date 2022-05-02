@@ -12,9 +12,11 @@ Description
    L’indicateur mesure l’état structurel des chaussées.
 
 Méthode de calcul
-   L’indicateur « ISTRU » calcule la proportion des chaussées en état structurel dégradé, en croisant deux indices intermédiaires résultats de la combinaison d’index unitaires de dégradation de surface et d’uni petites ondes dont les principes sont exposés en annexe à la présente fiche. 
-   La périodicité d’auscultation est de 3 ans. Les voies lentes dans les deux sens de circulation des sections courantes d’autoroutes à l’exclusion notamment des bifurcations, des échangeurs, des aires et des plateformes de péage.  
-   La méthodologie de calcul de l'indicateur est annexée au contrat de concession en cours et disponible sur :  
+   L’indicateur « ISTRU » calcule la proportion des chaussées en état structurel dégradé, en croisant deux indices intermédiaires résultats de la combinaison d’index unitaires de dégradation de surface et d’uni petites ondes.  
+   
+   La périodicité d’auscultation est de 3 ans. Les voies lentes dans les deux sens de circulation des sections courantes d’autoroutes à l’exclusion notamment des bifurcations, des échangeurs, des aires et des plateformes de péage.
+   
+   La méthodologie de calcul de l'indicateur est annexée au contrat de concession en cours et disponible sur :  XXXX
 
 Objectif
    L’indicateur est assorti de deux objectifs :
@@ -37,14 +39,16 @@ Mécanisme de pénalité
    Appliqué en cas de non-respect des seuils.
 
 Propriétaire de donnnées
-   Direction du Développement, de l'Ingénierie et de l'Innovation 
+   Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I). 
 
 Source de données
-   Les données sont collectées par le prestataire spécialisé et envoyées en fichier Excel fournis à la 2D2I. Les calculs sont également réalisés par le prestataire. En 2021, le prestataire était NextRoad et en 2021 Ginger. Il n'existe pas de rapport BO.
+   Les données sont collectées par le prestataire spécialisé et envoyées en fichier Excel fournis à la 2D2I. Les calculs de l'indicaterus sont réalisés et restitués par le prestataire. En 2021, le prestataire était NextRoad et en 2021 Ginger.
    
 Rapport BO
   ``Non existant``
 
+Annexe 
+   Consulter le document "Annexe 05 - Fiches Indicateurs de performance". 
 
 Indicateur IQRA: État de surface des chaussées
 -----------------------------------------------
@@ -57,6 +61,8 @@ Description
 
 Méthode de calcul
       La méthode prend en compte les mesures macro-texture, de CFT (coefficient de frottement transversal), d’uni longitudinal (ondes courtes) et d’orniérage. Ces deux index unitaires sont croisés deux à deux afin de définir un indicateur adhérence et un indicateur d’uni. Ces deux indicateurs sont ensuite croisés à l’aide d’un système matriciel pour définir un indicateur global dénommé « indicateur de surface ». L’indicateur est calculé annuellement. L’indicateur s’applique qu’aux sections courantes d’autoroutes et exclut notamment les bifurcations, les échangeurs, les aires et les plateformes de péage. La méthode ne s’applique pas aux chaussées en béton. 
+      
+      La méthodologie de calcul de l'indicateur est annexée au contrat de concession en cours et disponible sur :  XXXXX
 
 Objectif
       L’indicateur est assorti de deux objectifs :
@@ -67,10 +73,13 @@ Mécanisme de pénalité
       La pénalité s’applique dès qu’un des deux objectifs n’est pas atteint.
 
 Propriétaire de données      
-   Direction du Développement, de l'Ingénierie et de l'Innovation 
+   Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I).
 
 Source de données
-      Fichiers Excel fournis par le prestataire et stockés sur le réseau. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
+      Fichiers Excel fournis par le prestataire et stockés sur le réseau d'entreprise. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
       
 Rapport BO
   ``Non existant``
+
+Annexe 
+   Consulter le document "Annexe 05 - Fiches Indicateurs de performance".
