@@ -72,13 +72,12 @@ Méthode de calcul
   A partir de deux variables calculées ``Délai de réponse aux réclamations des clients`` et ``Nombre de réclamations``, calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante ::
   
    Nombre de réclamations pour chaque durée (en jours) / Nombre total de réclamations.
-  
+   
 .. figure:: delaireponse
    :width: 50%
    :align: center
    :alt: Le pourcentage de réponses jour par jour à partir du 11ème jour.
    
-
 Objectif
   NA
 
