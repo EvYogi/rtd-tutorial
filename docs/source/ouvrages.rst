@@ -29,7 +29,7 @@ Mécanisme de pénalité
   La pénalité s’applique en fin contrat de plan puis annuellement en cas de non atteinte de l’un et/ou l’autre des deux objectifs. En 
 
 Propriétaire de données
-  2D2I
+  Direction du Développement, de l'Ingénierie et de l'Innovation 
 
 Source de données
   Fichiers Excel fournit par le prestataire et stockés sur le réseau. En 2021, le prestataire retenu était NextRoad et en 2021 Ginger.
@@ -57,8 +57,8 @@ Mécathisme de pénalité
   La pénalité s’applique pour chaque ouvrage classé “S” depuis plus de 13 semaines au-delà de 2 simultanément (le décompte des semaines se fait en année glissante).  
 
 Propriétaire de données
-  2D2I
-  
+  Direction du Développement, de l'Ingénierie et de l'Innovation 
+
 Source de données
   Fichier Excel ???
 
@@ -90,7 +90,7 @@ Mécathisme de pénalité
 
 
 Propriétaire de données
-  2D2I
+  Direction du Développement, de l'Ingénierie et de l'Innovation 
 
 Source de données
   ??? 
@@ -99,23 +99,24 @@ Investissements consacrés aux ouvrages d’art
 ---------------------------------------------
 
 Enjeux
-  Conservation du patrimoine. 
+  Gestion du patrimoine. 
   
 Description
 
-Méthode de calculs
+Méthode de calcul
   
 
 Objectif
+  NA
   
-
 Mécathisme de pénalité
   
 
 Propriétaire de données
-  
+   Direction du Développement, de l'Ingénierie et de l'Innovation 
 
 Source de données
+  ????
   
 
 
