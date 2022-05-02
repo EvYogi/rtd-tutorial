@@ -8,7 +8,7 @@ Enjeux
   Services aux usagers / qualité.
 
 Description
-  Faire un bilan des solliciations récues en classsant en distiguant ``réclamations`` et ``régularisations``. 
+  Faire un bilan des solliciations récues en distiguant ``réclamations`` et ``régularisations``. 
   
   Le bilan met en évidence les différents types de sollicitation : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
   Le bilan des réclamtions est annexé au rapport d'exécution de la concession (Annexe N°20). 
@@ -48,8 +48,11 @@ Méthode de calcul
 
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
+  
     Seuil 1 : au moins de 90% de réponses en 10 jours ouvrés au plus
+    
     Seuil 2 : au moins 98,5% de réponses en un mois calendaire au plus
+    
   Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).   
 
 Mécathisme de pénalité
@@ -60,6 +63,9 @@ Propriétaire de données
 
 Source de données
   ``Dynamics``
+
+Rapport BO
+  ``Non existant``
 
 Histogramme de délai de réponse aux réclamations clients (%)
 -------------------------------------------------------------
@@ -150,5 +156,5 @@ Responsable
   Les évaluations sont réalisées et consolidées sous la responsabilité directe de l’autorité concédante.
 
 Source de données
-  NA
+  Non disponible
 
