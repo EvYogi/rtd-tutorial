@@ -4,13 +4,29 @@ Satisfaction des clients
 Bilan des réclamations
 -----------------------
 
-* Enjeux
-* Description
-* Méthode de calcul
-* Objectif
-* Mécanisme de pénalité 
-* Propriétaire de donnnées
-* Source de données  
+Enjeux
+  Services aux usagers / qualité.
+
+Description
+  Faire un bilan des solliciations récues en classsant en distiguant ``réclamations`` et ``régularisations``. Le bilan met en évidence les différents types de sollicitation : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
+  Le bilan des réclamtions est annexé au rapport d'exécution de la concession (Annexe N°20). 
+
+Méthode de calcul
+  Pour chaque solliciation choisir la variable ``X`` et la variable ``Y`` pour calculer le nombre de sollicitations par type ``réclamation`` ou ``régularisation``. 
+ 
+Objectif
+  NA
+Mécanisme de pénalité 
+  NA
+
+Propriétaire de donnnées
+  Direction Clientèle 
+  
+Source de données 
+  ``Dynamics``
+  
+Rapport BO
+  ``Non existant``
 
 Délai de réponse aux réclamations des clients
 ----------------------------------------------
@@ -23,9 +39,6 @@ Description
 
 Méthode de calcul
   La mesure s’effectue entre la date de réception par ATMB (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique). La réponse considérée est la 1ère réponse de fond et non une réponse d’attente. Un suivi permanent des réponses est effectué par ATMB qui calcule les pourcentages de réponses se situant dans les seuls admissibles.
-  
-  L’histogramme des délais de réponse doit faire apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
-  
   Un rapport justifiant tout dépassement important doit être fourni.
 
 Objectif
@@ -41,24 +54,48 @@ Propriétaire de données
   Direction Clientèle
 
 Source de données
-  Dynamics
+  ``Dynamics``
 
-Histogramme de délai de réponse aux réclamations clients
+Histogramme de délai de réponse aux réclamations clients (%)
 -------------------------------------------------------------
 
-* Enjeux
-* Description
-* Méthode de calcul
-* Objectif
-* Mécathisme de pénalité
-* Propriétaire de données
-* Source de données
+Enjeux
+  Services aux usagers / respect des usagers.
+  
+Description
+  Construire l'histogramme des délais de réponse qui doit faire apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
+
+Méthode de calcul
+  A partir de deux variables calculées ``Délai de réponse aux réclamations des clients`` et ``Nombre de réclamations``, calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante ::
+  
+   Nombre de réclamations pour chaque durée (en jours) / Nombre total de réclamations.
+  
+.. figure:: delai reponse %
+   :width: 50%
+   :align: center
+   :alt: Le pourcentage de réponses jour par jour à partir du 11ème jour.
+   
+
+Objectif
+  NA
+
+Mécathisme de pénalité
+  NA
+
+Propriétaire de données
+  Direction Clientèle 
+
+Source de données
+  Fichier Excel avec l'indicateur calculé "Délai de réponse aux réclamations des clients". 
+  
+Rapport BO
+  ``Non existant``
 
 
 Nombre de réclamations par milliard de kilomètres parcourus
 ------------------------------------------------------------
 
-* Enjeux
+Enjeux
 * Description
 * Méthode de calcul
 * Objectif
