@@ -20,10 +20,13 @@ Mécathisme de pénalité
   NA
 
 Propriétaire de données
-  Direction Réseau Environnement / Centre d'exploitation 
+  Direction Réseau Environnement / Centre d'exploitation. 
 
 Source de données
   Fournisseur d'eau - factures.
+
+Rapport BO
+  ``Non existant``
 
 Tri des déchets
 ----------------
@@ -35,13 +38,17 @@ Description
   Installer des systèmes de tri des déchets dans les centres d'explotation et sur les aires de repos. 
 
 Objectif
+  100% 
   
 Propriétaire de données
   Direction Réseau Environnement / Responsable Environnement & Patrimoine
 
 Résultats 
   Aires de repos et de service (%) : 100 % (14 sur 14 unités)
+  
   Centres d'exploitation (%) : 100 % (3 sur 3)
+
+
 
 Qualité de l'air
 -----------------
@@ -70,7 +77,7 @@ Propriétaire de données
   Direction Réseau Environnement
   
 Source de données
-  Sierra 1
+  ``Sierra 1``
 
 Rapport BO
   ``Bouchon OK``
@@ -91,7 +98,7 @@ Objectif
 Propriétaire de données
   Direction Réseau Environnement / Poste de contrôle. 
   
-Réstats
+Résultats
    Depuis XXXX, XXX n'utilise plus les produits pour l'exploitation du réseau (0 %). 
 
 
