@@ -70,7 +70,7 @@ Méthode de calcul
   
    Nombre de réclamations pour chaque durée (en jours) / Nombre total de réclamations.
   
-.. figure:: delai reponse %
+.. figure:: delaireponse
    :width: 50%
    :align: center
    :alt: Le pourcentage de réponses jour par jour à partir du 11ème jour.
