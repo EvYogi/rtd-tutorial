@@ -37,7 +37,7 @@ Mécanisme de pénalité
    Appliqué en cas de non-respect des seuils.
 
 Propriétaire de donnnées
-   2D2I
+   Direction du Développement, de l'Ingénierie et de l'Innovation 
 
 Source de données
    Les données sont collectées par le prestataire spécialisé et envoyées en fichier Excel fournis à la 2D2I. Les calculs sont également réalisés par le prestataire. En 2021, le prestataire était NextRoad et en 2021 Ginger. Il n'existe pas de rapport BO.
@@ -66,8 +66,8 @@ Objectif
 Mécanisme de pénalité
       La pénalité s’applique dès qu’un des deux objectifs n’est pas atteint.
 
-Propriétaire de données
-      2D2I
+Propriétaire de données      
+   Direction du Développement, de l'Ingénierie et de l'Innovation 
 
 Source de données
       Fichiers Excel fournis par le prestataire et stockés sur le réseau. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
