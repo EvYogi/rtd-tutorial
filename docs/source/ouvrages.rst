@@ -26,7 +26,7 @@ Objectif
     - Objectif 2 : moins de 5% d'ouvrages classés en 3 et 3U sur le réseau autoroutier et 10% maximum sur la RN 205 
 
 Mécanisme de pénalité
-  La pénalité s’applique en fin contrat de plan puis annuellement en cas de non atteinte de l’un et/ou l’autre des deux objectifs. En 
+  La pénalité s’applique en fin contrat de plan puis annuellement en cas de non atteinte de l’un et/ou l’autre des deux objectifs. 
 
 Propriétaire de données
   Direction du Développement, de l'Ingénierie et de l'Innovation 
