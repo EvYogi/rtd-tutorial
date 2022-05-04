@@ -1,4 +1,4 @@
-Bienvenue dans la documentation ATMB !
+Bienvenue dans la documentation XXXX !
 =======================================
 
 
@@ -6,7 +6,7 @@ Bienvenue dans la documentation ATMB !
 
    La documentation est en cours de production.
 
-La documentation couvre le périmètre du rapport d'exécution de la concesssion d'ATMB qui comprend, notamment :
+La documentation couvre le périmètre du rapport d'exécution de la concesssion d'XXXX qui comprend, notamment :
 
 * Les données comptables et économiques ; 
 * Un état des variations du patrimoine immobilier intervenues dans le cadre du contrat ;
