@@ -123,11 +123,9 @@ Périmètre mesuré
   Le bilan des réclamations est annexé au rapport d'exécution de la concession au format Excel (Annexe N°20). 
 
 Méthode de calcul
-  Pour chaque niveau, comptabiliser le nombre d'incidents selon sa classification.
+  Pour chaque niveau, comptabiliser le nombre d'incidents selon sa classification selon les règles métier suivantes:
   
-  Prendre en compte les règles métier suivantes:
-  
-  - Prendre en compte les réclamations au statut ``Résolu`` e.t ``Actif``.
+  - Prendre en compte les incidents dont ``Niveau 1 = RECLAMATION`` au statut ``Résolu`` et ``Actif``.
   - Prendre en compte toutes les réclamations dont la date de réception se situe entre le 1 janvier et le 31 décembre inclus de l'année analysée. 
   - Prendre en compte uniquement les incidents "parent" et les incidents "enfants" à condiction que l'incident "enfant" est ``Niveau 1 = DEMANDE``. 
   - Prendre en compte uniquement les réclamations localisées sur le réseau d'ATMB (cf. liste spécifié dans l'annexe).
