@@ -44,6 +44,7 @@ Description
 
 Méthode de calcul
   La mesure s’effectue entre la date de réception par ATMB du courrier (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique). La réponse considérée est la 1ère réponse de fond et non une réponse d’attente. Un suivi permanent des réponses est effectué par ATMB qui calcule les pourcentages de réponses se situant dans les seuls admissibles.
+  
   Un rapport justifiant tout dépassement important doit être fourni.
 
 Objectif
@@ -55,26 +56,14 @@ Objectif
     
   Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
-Règles métier 
-  Prendre en compte tous les incidents au statut "Résolu" et "Actif".
-  Exclure le statut "Annulé".
-  Prendre en compte les incidents dont l'Origine : "Web" Formulaire contact (Web)"
-,
-"Courrier
-libre"
-,
-"E-mail"
-,
-"Carte "Parcours le plus long"
-,
-"Content / Pas content".
-Exclure : téléphone, visite, Facebook, IoT, Twitter, péage
-Exclure : DEMANDE - SAV dont le "Niveau 4" est changement de coordonnées, changement DA/DM,
-matérialisé/dématérialisé, rejet CB, rejet prélèvement.
-Exclure toutes incidents "AUTRES" sauf les incidents dont le "Niveau 2" est "Autres" ou vide.
-Exclure les incidents dont la date de réception est en 2020.
-Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser
-les deux fois la même demande.
+Pour calculer l'indicateur, il faut prendre en compte les règles métier suivantes :
+  - Prendre en compte les incidents au statut "Résolu" et "Actif" et exclure le statut "Annulé".
+  - Prendre en compte les incidents dont l'Origine : ``Web``, ``Foulaire contact (Web)", "Courrier libre", "E-mail", "Carte "Parcours le plus long", "Content / Pas content".
+  - Exclure : téléphone, visite, Facebook, IoT, Twitter, péage
+  - Exclure : DEMANDE - SAV dont le "Niveau 4" est changement de coordonnées, changement DA/DM, matérialisé/dématérialisé, rejet CB, rejet prélèvement.
+  - Exclure toutes incidents "AUTRES" sauf les incidents dont le "Niveau 2" est "Autres" ou vide.
+  - Exclure les incidents dont la date de réception est en 2020.
+  - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser les deux fois la même demande.
 
 Mécathisme de pénalité
   Appliqué en cas de non-respect des seuils.
