@@ -1,7 +1,7 @@
 Satisfaction des clients
 =========================
 
-Délai de réponse aux sollicitations écrites d'usagers
+Délais de réponse aux sollicitations écrites d'usagers
 --------------------------------------------------------
 
 Enjeux
@@ -182,17 +182,17 @@ Rapport BO
 Qualité des aires de repos
 ---------------------------
 
-Enjeux
-  Services aux usagers - Confort / agrément.
-  
-Description
-  Qualité des aires de repos sur les paramètres essentiels en vue de la satisfaction des usagers.          
-
 .. note::
 
    Les évaluations sont réalisées et consolidées sous la responsabilité directe de l’autorité concédante puis envoyées à ATMB.
    
    Premier audit à blanc prévu en 2022, à partir de 2023 l'indicateur sera pénalisable si une aire de repos est notée <=12.
+
+Enjeux
+  Services aux usagers - Confort / agrément.
+  
+Description
+  Qualité des aires de repos sur les paramètres essentiels en vue de la satisfaction des usagers.          
 
 Méthode de calcul
   L’indicateur mesure le niveau de prestations et d' entretien des équipements essentiels des aires de repos (toilettes, parkings, aires de jeu, zones de pique-nique et de détente) en matière de : disponibilité, état, propreté et accessibilité.
