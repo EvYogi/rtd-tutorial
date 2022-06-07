@@ -109,10 +109,10 @@ Enjeux
   Services aux usagers / confiance.
 
 Description
-  Ramener le nombre de réclamations récues (sauf régularisation) aux données du trafic.  
+  Ramener le nombre total de réclamations (selon le bilan des réclamations) au nombre de kilomètre parcourus en année, 
   
 Méthode de calcul
-  ::
+  Taux de réclamations = (Nombre total de réclamations en année / nombre de km parcourus en année) * 1 000 000 000 
   
 Objectif
   NA
