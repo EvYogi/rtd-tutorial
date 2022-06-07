@@ -54,7 +54,7 @@ Source de données
   Dynamics. L'extraction de données est faite à partir de l'ETL de Power Automate. La spécification de l'ETL est disponible dans le document (A COMPLETER).
 
 Rapport BO
-  Sans objet. 
+  Non disponible.
 
 
 
@@ -91,7 +91,7 @@ Source de données
   Extraction de données sur l'indicateur "Délai de réponse aux sollicitations des clients". 
   
 Rapport BO
-  Sans objet.
+  Non disponible.
 
   
 
@@ -109,7 +109,7 @@ Description
     Les régularisations sont les transactions effectuées intersociétaires.
 
 Périmètre mesuré
-  L'ensemble des réclamations pour ATMB (tous
+  L'ensemble des réclamations adressées à ATMB. 
   
   Le bilan des réclamations calcule le nombre de réclamations par type de niveau : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
   
@@ -142,7 +142,7 @@ Source de données
   Dynamics. 
   
 Rapport BO
-  Sans objet. 
+  Non disponible. 
 
 
 
@@ -153,13 +153,13 @@ Enjeux
   Services aux usagers / respect des usagers.
 
 Description
-  L'indicateur exprime le niveau de réclamations enregistrées par le service CRC, exprimés en milliard.
+  L'indicateur exprime le niveau de réclamations enregistrées par le service Relation Clients, exprimés en milliard.
   
 Méthode de calcul
-  Taux de réclamations = (Nombre de réclamations en année / nombre de km parcourus en année) * 1 000 000 000. 
-  
-  Nombre de réclamations = nombre total de réclamations selon le bilan des réclamations (Xxxx ajouter une ref à l'indicateur).
-  Nombre de kilomètre parcourus  = chercher la donnée dans le rapport BO ``aaaa_aaaa -1 KMP ouvert (BOTV) + fermé (BOPR) avec régul``. 
+  **Taux de réclamations** est égal au nombre de réclamations en année divisé par le nombre de km parcourus en année et multiplié par 1 000 000 000, où:
+
+  - Nombre de réclamations = nombre total de réclamations selon :ref:`Bilan des réclamations`.
+  - Nombre de kilomètre parcourus  = chercher la donnée dans le rapport BO ``aaaa_aaaa -1 KMP ouvert (BOTV) + fermé (BOPR) avec régul``. 
   
 Objectif
   NA
@@ -174,7 +174,7 @@ Source de données
   Dynamics
 
 Rapport BO
-  Sans objet. 
+  Pour récupérer le nombre de kilomètre parcourus, consulter le rapport ``aaaa_aaaa -1 KMP ouvert (BOTV) + fermé (BOPR) avec régul``. 
 
 
 
