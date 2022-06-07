@@ -1,7 +1,7 @@
 Satisfaction des clients
 =========================
 
-Délai de réponse aux sollicitations écrites de clients
+Délai de réponse aux sollicitations écrites d'usagers
 --------------------------------------------------------
 
 Enjeux
@@ -47,7 +47,7 @@ Méthode de calcul :
         - ``IoT``, 
         - ``Twitter``, 
         - ``péage``.
-    - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` =
+    - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` est égale
         - ``changement de coordonnées``, 
         - ``changement DA/DM``, 
         - ``matérialisé/dématérialisé``, 
@@ -99,7 +99,7 @@ Propriétaire de données
   Direction Clientèle 
 
 Source de données
-  Extrait de données sur l'indicateur "Délai de réponse aux sollicitations des clients". 
+  Extraction de données sur l'indicateur "Délai de réponse aux sollicitations des clients". 
   
 Rapport BO
   ``Non existant``
@@ -123,7 +123,8 @@ Périmètre mesuré
   L'ensemble des réclamations pour ATMB (tous
   
   Le bilan des réclamations calcule le nombre de réclamations par type de niveau : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
-  Le bilan des réclamtions est annexé au rapport d'exécution de la concession (Annexe N°20). 
+  
+  Le bilan des réclamations est annexé au rapport d'exécution de la concession (Annexe N°20). 
 
 Méthode de calcul::
 
@@ -131,22 +132,17 @@ Méthode de calcul::
   
 Prendre en compte les règles métier suivantes
 - Prendre en compte les réclamations au statut ``Résolu`` e.t ``Actif``.
-- Prendre en compte toutes les réclamations dont la date de réception se situe entre le 1 janvier et le 31 décembre 2021 inclus de l'année analysée. 
-- Prendre en compte uniquement les incidents "parent" et les incidents "enfants" à condiction que l'incident "enfant" est ```` ("Niveau 1")
+- Prendre en compte toutes les réclamations dont la date de réception se situe entre le 1 janvier et le 31 décembre inclus de l'année analysée. 
+- Prendre en compte uniquement les incidents "parent" et les incidents "enfants" à condiction que l'incident "enfant" est ``Niveau 1 = DEMANDE``. 
+- Prendre en compte uniquement les réclamations localisées sur le réseau d'ATMB (cf. liste spécifié dans l'annexe)
 
 - Exclure les réclamations de type ``Avis de paiement``
 - Exclure les réclamations de type ``Ticket perdu ou égaré``.
 - Exclure les réclamations de type ``CNP``.
 
-Prendre en compte uniquement les réclamations localisées sur le réseau d'ATMB (cf. liste dans
-l'annexe)
- 
-Exclure du calcul
-  - ..
-  - .?..
-
 Objectif
   NA
+
 Mécanisme de pénalité 
   NA
 
@@ -154,7 +150,7 @@ Propriétaire de donnnées
   Direction Clientèle 
   
 Source de données 
-  ``Dynamics``
+  Dynamics. 
   
 Rapport BO
   ``Non existant``
@@ -190,6 +186,9 @@ Source de données
 
 Rapport BO
   ``Non existant``
+
+
+
 
 Qualité des aires de repos
 ---------------------------
