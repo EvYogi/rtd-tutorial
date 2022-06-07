@@ -29,32 +29,17 @@ Objectif
   Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
 Méthode de calcul
-  Pour calculer l'indicateur, il est nécessaire de prendre en compte les règles métier suivantes
-    - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``;
-    - Prendre en compte les incidents dont la variable ``Origine``
-        - ``Web``; 
-        - ``Formulaire contact (Web)``; 
-        - ``Courrier libre``; 
-        - ``E-mail``; 
-        - ``Carte "Parcours le plus long``, 
-        - ``Content / Pas content``.
-    - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser deux fois la même demande. La variable ``Incident parent = NULL``.
+  Pour calculer l'indicateur, il est nécessaire de prendre en compte les règles métier suivantes:
+  
+  - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``;
+  - Prendre en compte les incidents dont la variable ``Origine`` = ``Web``, ``Formulaire contact (Web)``, ``Courrier libre``, ``E-mail``, ``Carte "Parcours le plus long``, ``Content / Pas content``.
+  - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser deux fois la même demande. La variable ``Incident parent = NULL``.
 
-  L'indicateur exclut les cas de figure suivants : 
-    - Exclure les incidents au statut ``Annulé``.
-    - Exclure les incidents dont la variable ``Origine`` est égale à :
-        - ``téléphone``, 
-        - ``visite``, 
-        - ``Facebook``, 
-        - ``IoT``, 
-        - ``Twitter``, 
-        - ``péage``.
-    - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` est égale
-        - ``changement de coordonnées``, 
-        - ``changement DA/DM``, 
-        - ``matérialisé/dématérialisé``, 
-        - ``rejet CB``, 
-        - ``rejet prélèvement``.
+  L'indicateur exclut les cas de figure suivants: 
+  
+  - Exclure les incidents au statut ``Annulé``.
+  - Exclure les incidents dont la variable ``Origine`` = ``téléphone``, ``visite``, ``Facebook``, ``IoT``, ``Twitter``, ``péage``.
+  - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4``= ``changement de coordonnées``, ``changement DA/DM``, ``matérialisé/dématérialisé``, ``rejet CB``, ``rejet prélèvement``.
     - Exclure les incidents du ``Niveau 1 = AUTRES`` sauf les incidents dont le ``Niveau 2 = "Autres" ou NULL``.
     - Exclure les incidents dont la ``date de réception`` est spécifié en année (N-1).
   
