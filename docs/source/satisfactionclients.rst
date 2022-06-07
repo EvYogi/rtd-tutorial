@@ -35,7 +35,7 @@ Méthode de calcul
   - Prendre en compte les incidents dont la variable ``Origine`` = ``Web``, ``Formulaire contact (Web)``, ``Courrier libre``, ``E-mail``, ``Carte "Parcours le plus long``, ``Content / Pas content``.
   - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser deux fois la même demande. La variable ``Incident parent = NULL``.
 
-  L'indicateur exclut les cas de figure suivants: 
+  L'indicateur exclut les incidents suivants: 
   
   - Exclure les incidents au statut ``Annulé``.
   - Exclure les incidents dont la variable ``Origine`` = ``téléphone``, ``visite``, ``Facebook``, ``IoT``, ``Twitter``, ``péage``.
@@ -53,7 +53,7 @@ Source de données
   Dynamics. L'extraction de données est faite à partir de l'ETL de Power Automate. La spécification de l'ETL est disponible dans le document (A COMPLETER).
 
 Rapport BO
-  ``Non existant``
+  Sans objet. 
 
 
 
@@ -90,7 +90,7 @@ Source de données
   Extraction de données sur l'indicateur "Délai de réponse aux sollicitations des clients". 
   
 Rapport BO
-  ``Non existant``
+  Sans objet.
 
   
 
@@ -141,7 +141,7 @@ Source de données
   Dynamics. 
   
 Rapport BO
-  ``Non existant``
+  Sans objet. 
 
 
 
@@ -173,7 +173,7 @@ Source de données
   Dynamics
 
 Rapport BO
-  ``Non existant``
+  Sans objet. 
 
 
 
@@ -211,5 +211,5 @@ Responsable
   Les évaluations sont réalisées et consolidées sous la responsabilité directe de l’autorité concédante.
 
 Source de données
-  Non disponible
+  Non disponible. 
 
