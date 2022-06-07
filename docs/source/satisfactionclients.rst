@@ -19,14 +19,12 @@ Périmètre mesuré
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
   
-    Seuil 1 : au moins de 90% de réponses en 10 jours ouvrés au plus
+  * Seuil 1 : au moins de 90% de réponses en 10 jours ouvrés au plus
+  * **Seuil 2** : au moins 98,5% de réponses en un mois calendaire au plus
     
-    Seuil 2 : au moins 98,5% de réponses en un mois calendaire au plus
-    
-  Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
+Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
 Méthode de calcul :
-
   Pour calculer l'indicateur, il faut prendre en compte les règles métier suivantes :
     - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``.
     - Prendre en compte les incidents dont la variable ``Origine`` est égale à:
@@ -84,8 +82,6 @@ Méthode de calcul
    1. Calculer une colonne "Nombre d'incidents cumulé"
    2. Pour calculer le délai de réponse en %, diviser le nombre d'incidents cumulé pour chaque durée (en jours) par le nombre total d'incidents.
    
-Welcome!
-
 .. figure:: /docs/source/Annotation_histo.png
    :width: 80%
    :align: center
