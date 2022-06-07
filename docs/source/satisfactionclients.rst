@@ -19,19 +19,19 @@ Périmètre mesuré
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
   
-  * Seuil 1 : au moins de 90% de réponses en 10 jours ouvrés au plus
+  * **Seuil 1** : au moins de 90% de réponses en 10 jours ouvrés au plus
   * **Seuil 2** : au moins 98,5% de réponses en un mois calendaire au plus
     
 Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
-Méthode de calcul :
-  Pour calculer l'indicateur, il faut prendre en compte les règles métier suivantes :
-    - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``.
-    - Prendre en compte les incidents dont la variable ``Origine`` est égale à:
-        - ``Web``, 
-        - ``Formulaire contact (Web)``, 
-        - ``Courrier libre``, 
-        - ``E-mail``, 
+Méthode de calcul
+  Pour calculer l'indicateur, il est nécessaire de prendre en compte les règles métier suivantes:
+    - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``;
+    - Prendre en compte les incidents dont la variable ``Origine``
+        - ``Web``; 
+        - ``Formulaire contact (Web)``; 
+        - ``Courrier libre``; 
+        - ``E-mail``; 
         - ``Carte "Parcours le plus long``, 
         - ``Content / Pas content``.
     - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser deux fois la même demande. La variable ``Incident parent = NULL``.
@@ -54,7 +54,6 @@ Méthode de calcul :
     - Exclure les incidents du ``Niveau 1 = AUTRES`` sauf les incidents dont le ``Niveau 2 = "Autres" ou NULL``.
     - Exclure les incidents dont la ``date de réception`` est spécifié en année (N-1).
   
-
 Mécathisme de pénalité
   Appliqué en cas de non-respect du deuxième seuil (30 jours calendaires).
 
@@ -67,6 +66,8 @@ Source de données
 Rapport BO
   ``Non existant``
 
+
+
 Histogramme de délais de réponse aux sollicitations de clients (%)
 -------------------------------------------------------------------
 
@@ -77,7 +78,7 @@ Description
   Tracer l'histogramme des délais de réponse qui fait apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
 
 Méthode de calcul
-  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs "Délai de réponse aux sollicitations écrites de clients", notamment les délais de réponse et le nombre d'incidents associé. Calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante ::
+  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :ref:`Délai de réponse aux sollicitations écrites d'usagers`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante ::
   
    1. Calculer une colonne "Nombre d'incidents cumulé"
    2. Pour calculer le délai de réponse en %, diviser le nombre d'incidents cumulé pour chaque durée (en jours) par le nombre total d'incidents.
