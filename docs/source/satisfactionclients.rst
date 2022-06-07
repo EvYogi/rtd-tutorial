@@ -33,17 +33,17 @@ Source de données
 Rapport BO
   ``Non existant``
 
-Délai de réponse aux réclamations des clients
-----------------------------------------------
+Délai de réponse aux sollicitations écrites de clients
+--------------------------------------------------------
 
 Enjeux
   Services aux usagers / respect des usagers.
 
 Description
-  L’indicateur permet d’évaluer la réactivité de ATMB dans ses réponses aux sollicitations des clients – mails, courriers et appels téléphoniques (notamment dans le cas de réclamations).
+  L’indicateur permet d’évaluer la réactivité de ATMB dans ses réponses  aux sollicitations des clients – mails, courrriers ou formulaire web. 
 
 Méthode de calcul
-  La mesure s’effectue entre la date de réception par ATMB (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique). La réponse considérée est la 1ère réponse de fond et non une réponse d’attente. Un suivi permanent des réponses est effectué par ATMB qui calcule les pourcentages de réponses se situant dans les seuls admissibles.
+  La mesure s’effectue entre la date de réception par ATMB du courrier (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique). La réponse considérée est la 1ère réponse de fond et non une réponse d’attente. Un suivi permanent des réponses est effectué par ATMB qui calcule les pourcentages de réponses se situant dans les seuls admissibles.
   Un rapport justifiant tout dépassement important doit être fourni.
 
 Objectif
@@ -53,7 +53,28 @@ Objectif
     
     Seuil 2 : au moins 98,5% de réponses en un mois calendaire au plus
     
-  Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).   
+  Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
+
+Règles métier 
+  Prendre en compte tous les incidents au statut "Résolu" et "Actif".
+  Exclure le statut "Annulé".
+  Prendre en compte les incidents dont l'Origine : "Web" Formulaire contact (Web)"
+,
+"Courrier
+libre"
+,
+"E-mail"
+,
+"Carte "Parcours le plus long"
+,
+"Content / Pas content".
+Exclure : téléphone, visite, Facebook, IoT, Twitter, péage
+Exclure : DEMANDE - SAV dont le "Niveau 4" est changement de coordonnées, changement DA/DM,
+matérialisé/dématérialisé, rejet CB, rejet prélèvement.
+Exclure toutes incidents "AUTRES" sauf les incidents dont le "Niveau 2" est "Autres" ou vide.
+Exclure les incidents dont la date de réception est en 2020.
+Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser
+les deux fois la même demande.
 
 Mécathisme de pénalité
   Appliqué en cas de non-respect des seuils.
@@ -62,7 +83,7 @@ Propriétaire de données
   Direction Clientèle
 
 Source de données
-  ``Dynamics``
+  ``Dynamics``, ``Power Automate``
 
 Rapport BO
   ``Non existant``
