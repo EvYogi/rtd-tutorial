@@ -86,7 +86,7 @@ Méthode de calcul
    
 Welcome!
 
-.. figure:: docs/source/Annotation 2022-06-07 170010.png
+.. figure:: docs/source/Annotation_histo.png
    :width: 80%
    :align: center
    :alt: Histogramme
