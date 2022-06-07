@@ -57,13 +57,17 @@ Objectif
   Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
 Pour calculer l'indicateur, il faut prendre en compte les règles métier suivantes :
-  - Prendre en compte les incidents au statut "Résolu" et "Actif" et exclure le statut "Annulé".
-  - Prendre en compte les incidents dont l'Origine : ``Web``, ``Foulaire contact (Web)", "Courrier libre", "E-mail", "Carte "Parcours le plus long", "Content / Pas content".
-  - Exclure : téléphone, visite, Facebook, IoT, Twitter, péage
-  - Exclure : DEMANDE - SAV dont le "Niveau 4" est changement de coordonnées, changement DA/DM, matérialisé/dématérialisé, rejet CB, rejet prélèvement.
-  - Exclure toutes incidents "AUTRES" sauf les incidents dont le "Niveau 2" est "Autres" ou vide.
-  - Exclure les incidents dont la date de réception est en 2020.
+  - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``.
+  - Prendre en compte les incidents dont ``Origine`` : ``Web``, ``Formulaire contact (Web)``, ``Courrier libre``, ``E-mail``, ``Carte "Parcours le plus long``, ``Content / Pas content``.
   - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser les deux fois la même demande.
+
+Prendre en compte les exceptions suivantes : 
+  - Exclure les incidents au statut ``Annulé``.
+  - Exclure : ``téléphone``, ``visite``, ``Facebook``, ``IoT``, ``Twitter``, ``péage``.
+  - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` = ``changement de coordonnées``, ``changement DA/DM``, ``matérialisé/dématérialisé``, ``rejet CB``, ``rejet prélèvement``.
+  - Exclure les incidents du ``Niveau 1 = AUTRES`` sauf les incidents dont le ``Niveau 2 = "Autres" ou vide``.
+  - Exclure les incidents dont la ``date de réception`` est spécifié en année (N-1).
+  
 
 Mécathisme de pénalité
   Appliqué en cas de non-respect des seuils.
