@@ -102,17 +102,20 @@ Rapport BO
   ``Non existant``
 
 
-Nombre de réclamations par milliard de kilomètres parcourus
-------------------------------------------------------------
+Taux de réclamations
+----------------------
 
 Enjeux
   Services aux usagers / confiance.
 
 Description
-  Ramener le nombre total de réclamations (selon le bilan des réclamations) au nombre de kilomètre parcourus en année, 
+  L'indicateur exprime le niveau de réclamations enregistrées par le service CRC, exprimés en milliard.
   
 Méthode de calcul
-  Taux de réclamations = (Nombre total de réclamations en année / nombre de km parcourus en année) * 1 000 000 000 
+  Taux de réclamations = (Nombre de réclamations en année / nombre de km parcourus en année) * 1 000 000 000. 
+  
+  Nombre de réclamations = nombre total de réclamations selon le bilan des réclamations (Xxxx ajouter une ref à l'indicateur).
+  Nombre de kilomètre parcourus  = chercher la donnée dans le rapport BO ``aaaa_aaaa -1 KMP ouvert (BOTV) + fermé (BOPR) avec régul``. 
   
 Objectif
   NA
@@ -130,7 +133,7 @@ Rapport BO
   ``Non existant``
 
 Qualité des aires de repos
---------------------------
+---------------------------
 
 Enjeux
   Services aux usagers - Confort / agrément.
