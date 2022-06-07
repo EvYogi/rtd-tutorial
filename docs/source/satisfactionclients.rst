@@ -1,38 +1,6 @@
 Satisfaction des clients
 =========================
 
-Bilan des réclamations
------------------------
-
-Enjeux
-  Services aux usagers / qualité.
-
-Description
-  Faire un bilan des solliciations récues en distiguant ``réclamations`` et ``régularisations``. 
-  
-  Le bilan met en évidence les différents types de sollicitation : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
-  Le bilan des réclamtions est annexé au rapport d'exécution de la concession (Annexe N°20). 
-
-Méthode de calcul::
-
-  Pour chaque solliciation,
-  choisir la variable ``X`` et la variable ``Y`` 
-  pour calculer le nombre de sollicitations par type ``réclamation`` ou ``régularisation``. 
- 
-Objectif
-  NA
-Mécanisme de pénalité 
-  NA
-
-Propriétaire de donnnées
-  Direction Clientèle 
-  
-Source de données 
-  ``Dynamics``
-  
-Rapport BO
-  ``Non existant``
-
 Délai de réponse aux sollicitations écrites de clients
 --------------------------------------------------------
 
@@ -40,12 +8,13 @@ Enjeux
   Services aux usagers / respect des usagers.
 
 Description
-  L’indicateur permet d’évaluer la réactivité de ATMB dans ses réponses  aux sollicitations des clients – mails, courrriers ou formulaire web. 
+  L’indicateur permet d’évaluer la réactivité de ATMB dans ses réponses aux sollicitations des clients – mails, courrriers et contact web. 
 
-Méthode de calcul
-  La mesure s’effectue entre la date de réception par ATMB du courrier (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique). La réponse considérée est la 1ère réponse de fond et non une réponse d’attente. Un suivi permanent des réponses est effectué par ATMB qui calcule les pourcentages de réponses se situant dans les seuls admissibles.
-  
-  Un rapport justifiant tout dépassement important doit être fourni.
+Méthode
+  La mesure s’effectue entre la date de réception par ATMB du courrier client (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique). La réponse considérée est la 1ère réponse sur le fond et non une réponse d’attente. Un suivi permanent des réponses est effectué par ATMB qui calcule les pourcentages de réponses se situant dans les seuls admissibles.
+
+Périmètre mesuré
+  L'ensemble des sollicitations écrites pour ATMB. 
 
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
@@ -56,47 +25,64 @@ Objectif
     
   Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
-Pour calculer l'indicateur, il faut prendre en compte les règles métier suivantes :
-  - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``.
-  - Prendre en compte les incidents dont ``Origine`` est ``Web``, ``Formulaire contact (Web)``, ``Courrier libre``, ``E-mail``, ``Carte "Parcours le plus long``, ``Content / Pas content``.
-  - Prendre en compte uniquement les incidents parent" et non "enfant" pour ne pas comptabiliser les deux fois la même demande. ``Incident parent = NULL``.
+Méthode de calcul :
 
-L'indicateur exclut les cas de figure suivants : 
-  - Exclure les incidents au statut ``Annulé``.
-  - Exclure les incidents dont ``Origine`` est ``téléphone``, ``visite``, ``Facebook``, ``IoT``, ``Twitter``, ``péage``.
-  - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` =
-      - ``changement de coordonnées``, 
-      - ``changement DA/DM``, 
-      - matérialisé/dématérialisé``, ``rejet CB``, ``rejet prélèvement``.
-  - Exclure les incidents du ``Niveau 1 = AUTRES`` sauf les incidents dont le ``Niveau 2 = "Autres" ou vide``.
-  - Exclure les incidents dont la ``date de réception`` est spécifié en année (N-1).
+  Pour calculer l'indicateur, il faut prendre en compte les règles métier suivantes :
+    - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``.
+    - Prendre en compte les incidents dont la variable ``Origine`` est égale à:
+        - ``Web``, 
+        - ``Formulaire contact (Web)``, 
+        - ``Courrier libre``, 
+        - ``E-mail``, 
+        - ``Carte "Parcours le plus long``, 
+        - ``Content / Pas content``.
+    - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser deux fois la même demande. La variable ``Incident parent = NULL``.
+
+  L'indicateur exclut les cas de figure suivants : 
+    - Exclure les incidents au statut ``Annulé``.
+    - Exclure les incidents dont la variable ``Origine`` est égale à :
+        - ``téléphone``, 
+        - ``visite``, 
+        - ``Facebook``, 
+        - ``IoT``, 
+        - ``Twitter``, 
+        - ``péage``.
+    - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` =
+        - ``changement de coordonnées``, 
+        - ``changement DA/DM``, 
+        - ``matérialisé/dématérialisé``, 
+        - ``rejet CB``, 
+        - ``rejet prélèvement``.
+    - Exclure les incidents du ``Niveau 1 = AUTRES`` sauf les incidents dont le ``Niveau 2 = "Autres" ou NULL``.
+    - Exclure les incidents dont la ``date de réception`` est spécifié en année (N-1).
   
 
 Mécathisme de pénalité
-  Appliqué en cas de non-respect des seuils.
+  Appliqué en cas de non-respect du deuxième seuil (30 jours calendaires).
 
 Propriétaire de données
   Direction Clientèle
 
 Source de données
-  ``Dynamics``, ``Power Automate``
+  Dynamics. L'extraction de données est faite à partir de l'ETL de Power Automate. La spécification de l'ETL est disponible dans le document (A COMPLETER).
 
 Rapport BO
   ``Non existant``
 
-Histogramme de délai de réponse aux réclamations clients (%)
--------------------------------------------------------------
+Histogramme de délais de réponse aux sollicitations de clients (%)
+-------------------------------------------------------------------
 
 Enjeux
   Services aux usagers / respect des usagers.
   
 Description
-  Construire l'histogramme des délais de réponse qui doit faire apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
+  Tracer l'histogramme des délais de réponse qui fait apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
 
 Méthode de calcul
-  A partir de deux variables calculées ``Délai de réponse aux réclamations des clients`` et ``Nombre de réclamations``, calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante ::
+  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs "Délai de réponse aux sollicitations écrites de clients", notamment les délais de réponse et le nombre d'incidents associé. Calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante ::
   
-   Nombre de réclamations pour chaque durée (en jours) / Nombre total de réclamations.
+   1. Calculer une colonne "Nombre d'incidents cumulé"
+   2. Pour calculer le délai de réponse en %, diviser le nombre d'incidents cumulé pour chaque durée (en jours) par le nombre total d'incidents.
    
 .. figure:: delaireponse
    :width: 50%
@@ -113,17 +99,73 @@ Propriétaire de données
   Direction Clientèle 
 
 Source de données
-  Fichier Excel avec l'indicateur calculé "Délai de réponse aux réclamations des clients". 
+  Extrait de données sur l'indicateur "Délai de réponse aux sollicitations des clients". 
   
 Rapport BO
   ``Non existant``
+
+  
+
+Bilan des réclamations
+-----------------------
+
+Enjeux
+  Services aux usagers / qualité.
+
+Description
+  Faire un bilan des réclamations réçues par ATMB: 
+    
+    Les réclamations sont les incidents du ``Niveau 1 = RECLAMATIONS``.
+    
+    Les régularisations sont les transactions effectuées intersociétaires.
+
+Périmètre mesuré
+  L'ensemble des réclamations pour ATMB (tous
+  
+  Le bilan des réclamations calcule le nombre de réclamations par type de niveau : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
+  Le bilan des réclamtions est annexé au rapport d'exécution de la concession (Annexe N°20). 
+
+Méthode de calcul::
+
+  Pour chaque ``Niveau``, comptabiliser le nombre d'incident  Utiliser le template Excel disponible ici. 
+  
+Prendre en compte les règles métier suivantes
+- Prendre en compte les réclamations au statut ``Résolu`` e.t ``Actif``.
+- Prendre en compte toutes les réclamations dont la date de réception se situe entre le 1 janvier et le 31 décembre 2021 inclus de l'année analysée. 
+- Prendre en compte uniquement les incidents "parent" et les incidents "enfants" à condiction que l'incident "enfant" est ```` ("Niveau 1")
+
+- Exclure les réclamations de type ``Avis de paiement``
+- Exclure les réclamations de type ``Ticket perdu ou égaré``.
+- Exclure les réclamations de type ``CNP``.
+
+Prendre en compte uniquement les réclamations localisées sur le réseau d'ATMB (cf. liste dans
+l'annexe)
+ 
+Exclure du calcul
+  - ..
+  - .?..
+
+Objectif
+  NA
+Mécanisme de pénalité 
+  NA
+
+Propriétaire de donnnées
+  Direction Clientèle 
+  
+Source de données 
+  ``Dynamics``
+  
+Rapport BO
+  ``Non existant``
+
 
 
 Taux de réclamations
 ----------------------
 
 Enjeux
-  Services aux usagers / confiance.
+  Services aux usagers / respect des usagers.
 
 Description
   L'indicateur exprime le niveau de réclamations enregistrées par le service CRC, exprimés en milliard.
