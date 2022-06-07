@@ -75,8 +75,10 @@ Méthode de calcul
    :align: center
    :alt: Histogramme
 
+
+
 .. figure:: /docs/source/Annotation_tableau.png
-   :width: 80%
+   :width: 40%
    :align: center
    :alt: Données de calcul pour l'histogramme
    
