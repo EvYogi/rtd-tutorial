@@ -7,14 +7,18 @@ Délai de réponse aux sollicitations écrites d'usagers
 Enjeux
   Services aux usagers / respect des usagers.
 
+
 Description
   L’indicateur permet d’évaluer la réactivité de ATMB dans ses réponses aux sollicitations des clients – mails, courrriers et contact web. 
+
 
 Méthode
   La mesure s’effectue entre la date de réception par ATMB du courrier client (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique). La réponse considérée est la 1ère réponse sur le fond et non une réponse d’attente. Un suivi permanent des réponses est effectué par ATMB qui calcule les pourcentages de réponses se situant dans les seuls admissibles.
 
+
 Périmètre mesuré
   L'ensemble des sollicitations écrites pour ATMB. 
+
 
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
@@ -22,10 +26,10 @@ Objectif
   * **Seuil 1** : au moins de 90% de réponses en 10 jours ouvrés au plus
   * **Seuil 2** : au moins 98,5% de réponses en un mois calendaire au plus
     
-Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
+  Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
 Méthode de calcul
-  Pour calculer l'indicateur, il est nécessaire de prendre en compte les règles métier suivantes:
+  Pour calculer l'indicateur, il est nécessaire de prendre en compte les règles métier suivantes
     - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``;
     - Prendre en compte les incidents dont la variable ``Origine``
         - ``Web``; 
