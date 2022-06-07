@@ -84,10 +84,14 @@ Méthode de calcul
    1. Calculer une colonne "Nombre d'incidents cumulé"
    2. Pour calculer le délai de réponse en %, diviser le nombre d'incidents cumulé pour chaque durée (en jours) par le nombre total d'incidents.
    
-.. figure:: delaireponse
-   :width: 50%
+Welcome!
+
+.. figure:: Annotation 2022-06-07 170010.png
+   :width: 80%
    :align: center
-   :alt: Le pourcentage de réponses jour par jour à partir du 11ème jour
+   :alt: Histo
+
+   Read the Docs empty dashboard
    
 Objectif
   NA
