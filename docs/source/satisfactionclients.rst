@@ -58,13 +58,16 @@ Objectif
 
 Pour calculer l'indicateur, il faut prendre en compte les règles métier suivantes :
   - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``.
-  - Prendre en compte les incidents dont ``Origine`` : ``Web``, ``Formulaire contact (Web)``, ``Courrier libre``, ``E-mail``, ``Carte "Parcours le plus long``, ``Content / Pas content``.
-  - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser les deux fois la même demande.
+  - Prendre en compte les incidents dont ``Origine`` est ``Web``, ``Formulaire contact (Web)``, ``Courrier libre``, ``E-mail``, ``Carte "Parcours le plus long``, ``Content / Pas content``.
+  - Prendre en compte uniquement les incidents parent" et non "enfant" pour ne pas comptabiliser les deux fois la même demande. ``Incident parent = NULL``.
 
-Prendre en compte les exceptions suivantes : 
+L'indicateur exclut les cas de figure suivants : 
   - Exclure les incidents au statut ``Annulé``.
-  - Exclure : ``téléphone``, ``visite``, ``Facebook``, ``IoT``, ``Twitter``, ``péage``.
-  - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` = ``changement de coordonnées``, ``changement DA/DM``, ``matérialisé/dématérialisé``, ``rejet CB``, ``rejet prélèvement``.
+  - Exclure les incidents dont ``Origine`` est ``téléphone``, ``visite``, ``Facebook``, ``IoT``, ``Twitter``, ``péage``.
+  - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` =
+      - ``changement de coordonnées``, 
+      - ``changement DA/DM``, 
+      - matérialisé/dématérialisé``, ``rejet CB``, ``rejet prélèvement``.
   - Exclure les incidents du ``Niveau 1 = AUTRES`` sauf les incidents dont le ``Niveau 2 = "Autres" ou vide``.
   - Exclure les incidents dont la ``date de réception`` est spécifié en année (N-1).
   
