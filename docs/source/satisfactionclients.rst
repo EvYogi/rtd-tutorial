@@ -80,7 +80,7 @@ Méthode de calcul
 .. figure:: /docs/source/Annotation_tableau.png
    :width: 40%
    :align: center
-   :alt: Données de calcul pour l'histogramme
+   :alt: Données de calcul pour l'histogramme. 
    
 
 Objectif
@@ -93,7 +93,7 @@ Propriétaire de données
   Direction Clientèle 
 
 Source de données
-  Extraction de données sur l'indicateur "Délai de réponse aux sollicitations des clients". 
+  Extraction de données sur l'indicateur "Délai de réponse aux sollicitations des clients". Le template pour l'histogramme est disponible ici. 
   
 Rapport BO
   Non disponible.
@@ -107,32 +107,34 @@ Enjeux
   Services aux usagers / qualité.
 
 Description
-  Faire un bilan des réclamations réçues par ATMB: 
-    
-    Les réclamations sont les incidents du ``Niveau 1 = RECLAMATIONS``.
-    
-    Les régularisations sont les transactions effectuées intersociétaires.
+  Le bilan des réclamations calcule le nombre de réclamations en les classant par type de niveau : 
+  - ``Niveau 2`` = ``PEAGE``, ``OFFRE DE PEAGE``, ``ACCUEIL & ASSISTANCE``, ``CONDITIONS CIRCULATION``, ``INFRASTRUCTUREs``, ``DEGÂTS A VEHICULE``, ``DEPANNAGE``;
+  - ``Niveau 3`` / ``Niveau 3`` = ``passage``, ``paiement``, ``politique tarifaire``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
+  
+
 
 Périmètre mesuré
-  L'ensemble des réclamations adressées à ATMB. 
+  L'ensemble des réclamations adressées à ATMB.
   
-  Le bilan des réclamations calcule le nombre de réclamations par type de niveau : ``péage / passage``, ``péage / paiement``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
+  - Les réclamations sont les incidents du ``Niveau 1 = RECLAMATIONS``.
+  - Les régularisations sont les transactions effectuées intersociétaires.
+
   
-  Le bilan des réclamations est annexé au rapport d'exécution de la concession (Annexe N°20). 
+  Le bilan des réclamations est annexé au rapport d'exécution de la concession au format Excel (Annexe N°20). 
 
-Méthode de calcul::
-
-  Pour chaque ``Niveau``, comptabiliser le nombre d'incident  Utiliser le template Excel disponible ici. 
+Méthode de calcul
+  Pour chaque niveau, comptabiliser le nombre d'incidents selon sa classification.
   
-Prendre en compte les règles métier suivantes
-- Prendre en compte les réclamations au statut ``Résolu`` e.t ``Actif``.
-- Prendre en compte toutes les réclamations dont la date de réception se situe entre le 1 janvier et le 31 décembre inclus de l'année analysée. 
-- Prendre en compte uniquement les incidents "parent" et les incidents "enfants" à condiction que l'incident "enfant" est ``Niveau 1 = DEMANDE``. 
-- Prendre en compte uniquement les réclamations localisées sur le réseau d'ATMB (cf. liste spécifié dans l'annexe)
-
-- Exclure les réclamations de type ``Avis de paiement``
-- Exclure les réclamations de type ``Ticket perdu ou égaré``.
-- Exclure les réclamations de type ``CNP``.
+  Prendre en compte les règles métier suivantes:
+  
+  - Prendre en compte les réclamations au statut ``Résolu`` e.t ``Actif``.
+  - Prendre en compte toutes les réclamations dont la date de réception se situe entre le 1 janvier et le 31 décembre inclus de l'année analysée. 
+  - Prendre en compte uniquement les incidents "parent" et les incidents "enfants" à condiction que l'incident "enfant" est ``Niveau 1 = DEMANDE``. 
+  - Prendre en compte uniquement les réclamations localisées sur le réseau d'ATMB (cf. liste spécifié dans l'annexe).
+  
+  - Exclure les réclamations de type ``Avis de paiement``
+  - Exclure les réclamations de type ``Ticket perdu ou égaré``.
+  - Exclure les réclamations de type ``CNP``.
 
 Objectif
   NA
