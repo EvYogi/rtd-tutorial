@@ -68,16 +68,19 @@ Description
   Tracer l'histogramme des délais de réponse qui fait apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
 
 Méthode de calcul
-  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :ref:`Délai de réponse aux sollicitations écrites d'usagers`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante ::
-  
-   1. Calculer une colonne "Nombre d'incidents cumulé"
-   2. Pour calculer le délai de réponse en %, diviser le nombre d'incidents cumulé pour chaque durée (en jours) par le nombre total d'incidents.
+  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :ref:`Délai de réponse aux sollicitations écrites d'usagers`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante :
    
 .. figure:: /docs/source/Annotation_histo.png
    :width: 80%
    :align: center
    :alt: Histogramme
+
+.. figure:: /docs/source/Annotation_tableau.png
+   :width: 80%
+   :align: center
+   :alt: Données de calcul pour l'histogramme
    
+
 Objectif
   NA
 
