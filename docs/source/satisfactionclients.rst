@@ -86,12 +86,10 @@ Méthode de calcul
    
 Welcome!
 
-.. figure:: Annotation 2022-06-07 170010.png
+.. figure:: docs/source/Annotation 2022-06-07 170010.png
    :width: 80%
    :align: center
-   :alt: Histo
-
-   Read the Docs empty dashboard
+   :alt: Histogramme
    
 Objectif
   NA
