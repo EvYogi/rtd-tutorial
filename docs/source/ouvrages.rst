@@ -115,21 +115,22 @@ Enjeux
   Gestion du patrimoine. 
   
 Description
+  Non disponible. A compléter
 
-Méthode de calcul
+Méthode
+  Non disponible. A compléter.
   
-
 Objectif
-  NA
+  Non disponible. 
   
 Mécathisme de pénalité
-  
+  Sans objet. 
 
 Propriétaire de données
    Direction du Développement, de l'Ingénierie et de l'Innovation 
 
 Source de données
-  ????
+  Fichier Excel. 
   
 
 
