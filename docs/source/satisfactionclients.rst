@@ -84,16 +84,16 @@ Méthode de calcul
    
 
 Objectif
-  NA
+  Non défini.
 
 Mécathisme de pénalité
-  NA
+  Non défini.
 
 Propriétaire de données
-  Direction Clientèle 
+  Direction Clientèle / Pôle Relation Client.
 
 Source de données
-  Extraction de données sur l'indicateur "Délai de réponse aux sollicitations des clients". Le template pour l'histogramme est disponible ici. 
+  Extraction de données sur l'indicateur "Délai de réponse aux sollicitations des usagers". Le template pour l'histogramme est disponible ici. 
   
 Rapport BO
   Non disponible.
@@ -110,8 +110,6 @@ Description
   Le bilan des réclamations calcule le nombre de réclamations en les classant par type de niveau : 
   - ``Niveau 2`` = ``PEAGE``, ``OFFRE DE PEAGE``, ``ACCUEIL & ASSISTANCE``, ``CONDITIONS CIRCULATION``, ``INFRASTRUCTUREs``, ``DEGÂTS A VEHICULE``, ``DEPANNAGE``;
   - ``Niveau 3`` / ``Niveau 3`` = ``passage``, ``paiement``, ``politique tarifaire``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
-  
-
 
 Périmètre mesuré
   L'ensemble des réclamations adressées à ATMB.
@@ -135,13 +133,13 @@ Méthode de calcul
   - Exclure les réclamations de type ``CNP``.
 
 Objectif
-  NA
+  Non défini.
 
 Mécanisme de pénalité 
-  NA
+  Non défini.
 
 Propriétaire de donnnées
-  Direction Clientèle 
+  Direction Clientèle / Pôle Relation Client.
   
 Source de données 
   Dynamics. 
@@ -167,10 +165,10 @@ Méthode de calcul
   - Nombre de kilomètre parcourus  = chercher la donnée dans le rapport BO ``aaaa_aaaa -1 KMP ouvert (BOTV) + fermé (BOPR) avec régul``. 
   
 Objectif
-  NA
+  Non défini.
 
 Mécathisme de pénalité
-  NA
+  Non défini.
 
 Propriétaire de données
   Direction Clientèle
