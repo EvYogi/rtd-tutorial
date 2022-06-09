@@ -1,5 +1,5 @@
-Bienvenue dans la documentation XXXX !
-=======================================
+Bienvenue dans la documentation en ligne d'ATMB !
+==================================================
 
 
 .. note::
