@@ -2,8 +2,8 @@ Accessibilité PMR
 ===================
 
 
-Mesures d'accessibilité pour les PMR (%)
-------------------------------------------
+Mise en conformité des sites pour les PMR (%)
+----------------------------------------------
 
 
 Enjeux
@@ -13,9 +13,8 @@ Description
   L'indicateur mesure la qualité de service offerte aux personnes en situation d'handicap grâce à la mise en conformité des sanitaires, PAU et services sur les aires annexes.    
 
 Méthode
-  Un inventaire exhaustif des équipements
+  Un inventaire exhaustif des équipements sur les sites accessibles aux PMR.
   
- 
 Périmètre mesuré
   Les aires de repos situées sur le réseau d'AXXX.
   
