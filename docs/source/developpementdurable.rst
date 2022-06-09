@@ -11,13 +11,13 @@ Description
    L'indicateur mesure le volume d'eau consommé par la société.
 
 Méthode de calcul
-  Prélevement depuis le compteur.
+  Prélevement des relevés depuis le compteur.
 
 Objectif
-  Affichier une baisse tendantielle dans la consommation d'eau.
+  Afficher une baisse tendantielle dans la consommation d'eau.
 
 Mécathisme de pénalité
-  NA
+  Non défini.
 
 Propriétaire de données
   Direction Réseau Environnement / Centre d'exploitation. 
@@ -26,7 +26,9 @@ Source de données
   Fournisseur d'eau - factures.
 
 Rapport BO
-  ``Non existant``
+  Non disponible.
+
+
 
 Tri des déchets
 ----------------
@@ -44,7 +46,7 @@ Propriétaire de données
   Direction Réseau Environnement / Responsable Environnement & Patrimoine
 
 Résultats 
-  Aires de repos et de service (%) : 100 % (14 sur 14 unités)
+  - res de repos et de service (%) : 100 % (14 sur 14 unités)
   
   Centres d'exploitation (%) : 100 % (3 sur 3)
 
