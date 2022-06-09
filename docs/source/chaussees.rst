@@ -90,19 +90,18 @@ Périmètre mesuré
    
    La fiche complète sur la méthode de calcul de l'indicateur est annexée au contrat de concession en cours et disponible dans le dossier "Docs" ( A COMPLETER).
 
-**L'indice IDEG décrit le niveau de dégravité pour les dégradations de surface.**
-   
-.. figure:: /docs/source/ind_iqra_.png
-   :width: 50%
-   :align: center
-   :alt: Indice de dégradation de surface 
-   
-**L'indice IDEG décrit le niveau de dégravité pour les dégradations de surface.**
-   
-.. figure:: /docs/source/ind_ideg.png
-   :width: 50%
-   :align: center
-   :alt: Indice de dégradation de surface 
+   **Chacun des index est comparé à des seuils de façon à les réunir par classes.**
+
+   .. figure:: /docs/source/ind_iqra_unitaires.png
+      :width: 50%
+      :align: center
+      :alt: Classification des index unitaires 
+
+
+   .. figure:: /docs/source/ind_iqra_adherence.png
+      :width: 50%
+      :align: center
+      :alt: Indix unitaires
 
 
 Objectif
@@ -117,7 +116,7 @@ Propriétaire de données
    Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I).
 
 Source de données
-      Fichiers Excel fournis par le prestataire et stockés sur le réseau d'entreprise. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
+   La collecte de données est réalisée par le prestataire et ensuite envoyée à la 2D2I. En 2021, le prestataire était NextRoad et en 2021 Ginger. 
       
 Rapport BO
   Non disponible. 
