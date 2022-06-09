@@ -18,8 +18,7 @@ les comptes retraçant la totalité des opérations afférentes
 et des services. Ce rapport est produit chaque année avant le 1er juin (article R. 3131-2, Code de la commande publique).
 
 
-
-Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs associés à l'entretien des chaussées et des ouvrages d'art présents sur le réseau XXXX.
+Chaque section décrit les indicateurs associés à la gestion de la concession autoroutière sur le périmètre confié à ATMB.
 
 
 .. toctree::
