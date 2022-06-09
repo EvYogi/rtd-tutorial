@@ -11,12 +11,18 @@ Enjeux
 Description
    L’indicateur mesure l’état structurel des chaussées.
 
+Méthodologie de mesure
+   L’indicateur « ISTRU » calcule la proportion des chaussées en état structurel dégradé, en croisant deux indices intermédiaires résultats de la combinaison d’index unitaires de dégradation de surface et d’uni petites ondes, dont les principes sont exposés en docucument joint à la présente section.  
+   
+   La périodicité d’auscultation est de 3 ans. 
+
+Périmètre mesuré
+   Les voies lentes dans les deux sens de circulation des sections courantes d’autoroutesdu réseau à l’exclusion notamment des bifurcations, des échangeurs, des aires et des plateformes de péage.
+
 Méthode de calcul
-   L’indicateur « ISTRU » calcule la proportion des chaussées en état structurel dégradé, en croisant deux indices intermédiaires résultats de la combinaison d’index unitaires de dégradation de surface et d’uni petites ondes.  
+   La méthode de calcul de l'indicateur repose sur des mesures de dégradations de surface des couches de roulement, et d'uni longitudinal petites ondes, permettant de calculer deux indices intermédiaires : un indice de dégradation IDEG et un indice de qualité structurelle fondé sur l'uni longitudinal petites ondes IQSPO. 
    
-   La périodicité d’auscultation est de 3 ans. Les voies lentes dans les deux sens de circulation des sections courantes d’autoroutes à l’exclusion notamment des bifurcations, des échangeurs, des aires et des plateformes de péage.
-   
-   La méthodologie de calcul de l'indicateur est annexée au contrat de concession en cours et disponible dans le dossier "Docs" (A COMPLETER). 
+   Ces indices intermédiares sont ensuite croisés entre eux pour définir un indicateur global dénommé indicateur structurel ISTRU. La fiche complète sur la méthode de calcul est annexée au contrat de concession en cours d'exécution et disponible dans le dossier "Docs" (A COMPLETER). 
 
 Objectif
    L’indicateur est assorti de deux objectifs :
@@ -29,6 +35,12 @@ Objectif
    :width: 50%
    :align: center
    :alt: Résultats de calcul 
+   
+
+.. figure:: ISTRU-tout-reseau.png
+   :width: 50%
+   :align: center
+   :alt: Exemple de graphe
    
 
 .. figure:: ISTRU-tout-reseau.png
