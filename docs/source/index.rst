@@ -10,7 +10,7 @@ La documentation couvre le périmètre du rapport d'exécution de la concesssion
 
 * Les données comptables et économiques ; 
 * Un état des variations du patrimoine immobilier intervenues dans le cadre du contrat ;
-* Une analyse de la qualité des ouvrages ou des services demandés au concessionnaire, à partir d'indicateurs proposés et définis par le concessionnaire par voie contractuelle. 
+* Une analyse de la qualité des ouvrages ou des services demandés à ATMB, à partir d'indicateurs proposés et définis par le concessionnaire par voie contractuelle. 
 
 **Le rapport d'exécution de la concession** est un rapport annuel comportant
 les comptes retraçant la totalité des opérations afférentes 
