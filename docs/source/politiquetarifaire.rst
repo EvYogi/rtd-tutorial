@@ -20,7 +20,7 @@ Objectif
   Non défini.
   
 Pénalité
-  ...
+  Non défini.
 
 Responsable
   Direction Clientèle / Pôle Marketing. 
