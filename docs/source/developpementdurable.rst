@@ -48,7 +48,7 @@ Propriétaire de données
 Résultats
 
   - Aires de repos et de service (%) : 100 % (14 sur 14 unités)
-  - ntres d'exploitation (%) : 100 % (3 sur 3)
+  - Centres d'exploitation (%) : 100 % (3 sur 3)
 
 
 
@@ -59,11 +59,20 @@ Enjeux
   Préserver l'environnement.
 
 Description
-  Mesurer la durée et la longueur des bouchons (H.km)
+  Mesurer la durée et la longueur des bouchons (H.km) pour estimer la pollution de l'air engendrée : 
+  
+  - Putions locales (particules, gaz toxiques) susceptibles d’entraîner des dommages immédiats dans une aire géographique donnée
+Les rejets de CO2 qui contribuent à l’effet de serre et posent un grave problème à l’échelle mondiale.
 
 Méthode de calcul
-      Variables utilisées : 
-      ``Type event = "bouchon"``, ``Date_debut``,  ``Date_fin`` , ``Longueur_queue``
+  Les bouchons se quantifient en volume d’encombrement et s’expriment en heures.kilomètres (HKM). 
+  
+  Le volume est calculé ainsi ::
+    
+    produit de la durée du bouchon (exprimé en heures) par la longueur moyenne (exprimée en km) et le nombre de voies. 
+  
+  Mesurer la longueur et la durée des bouchons pour calculer le gaz 
+    ``Type event = "bouchon"``, ``Date_debut``,  ``Date_fin`` , ``Longueur_queue``
 
 ::
    
