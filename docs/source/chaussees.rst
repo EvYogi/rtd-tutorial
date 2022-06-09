@@ -23,12 +23,6 @@ Méthode de calcul
    La méthode de calcul de l'indicateur repose sur des mesures de dégradations de surface des couches de roulement, et d'uni longitudinal petites ondes, permettant de calculer deux indices intermédiaires : un indice de dégradation IDEG et un indice de qualité structurelle fondé sur l'uni longitudinal petites ondes IQSPO. 
    
    Ces indices intermédiares sont ensuite croisés entre eux pour définir un indicateur global dénommé indicateur structurel ISTRU. La fiche complète sur la méthode de calcul est annexée au contrat de concession en cours d'exécution et disponible dans le dossier "Docs" (A COMPLETER). 
-
-Objectif
-   L’indicateur est assorti de deux objectifs :
-   
-   * Objectif 1 : 37,5% des notes >=3
-   * Objectif 2 : 93,4% des notes >=2
    
 **L'indice IDEG décrit le niveau de dégravité pour les dégradations de surface.**
    
@@ -51,6 +45,9 @@ Objectif
    :align: center
    :alt: Indice ISTRU
 
+Objectif
+   A définir pendant la durée du contrat d'entreprise ( A METTRE A JOUR).
+   
 Mécanisme de pénalité
    Appliqué en cas de non-respect des seuils.
 
@@ -58,7 +55,7 @@ Propriétaire de donnnées
    Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I). 
 
 Source de données
-   Les données sont collectées par le prestataire spécialisé et envoyées en fichier Excel fournis à la 2D2I. Les calculs de l'indicaterus sont réalisés et restitués par le prestataire. En 2021, le prestataire était NextRoad et en 2021 Ginger.
+   Les relevés sont menés par un prestataire spécialisé ainsi que le calcul de l'indicateur ISTRU et ensuite envoyés en format Excel à la 2D2I. En 2021, le prestataire était NextRoad et en 2021 Ginger.
    
 Rapport BO
   Non disponible. 
@@ -75,22 +72,48 @@ Enjeux
       Conservation du patrimoine / sécurité des usagers.
 
 Description
-      L'indicateur mesure la surface des chaussées.
+      L'indicateur mesure l'état de surface des chaussées.
 
 Méthode de calcul
-      La méthode prend en compte les mesures macro-texture, de CFT (coefficient de frottement transversal), d’uni longitudinal (ondes courtes) et d’orniérage. Ces deux index unitaires sont croisés deux à deux afin de définir un indicateur adhérence et un indicateur d’uni. Ces deux indicateurs sont ensuite croisés à l’aide d’un système matriciel pour définir un indicateur global dénommé « indicateur de surface ». L’indicateur est calculé annuellement. L’indicateur s’applique qu’aux sections courantes d’autoroutes et exclut notamment les bifurcations, les échangeurs, les aires et les plateformes de péage. La méthode ne s’applique pas aux chaussées en béton. 
+   La méthode prend en compte les mesures macro-texture, de CFT (coefficient de frottement transversal), d’uni longitudinal (ondes courtes) et d’orniérage. Ces deux index unitaires sont croisés deux à deux afin de définir un indicateur adhérence et un indicateur d’uni. 
+   
+   Ces deux indicateurs sont ensuite croisés à l’aide d’un système matriciel pour définir un indicateur global dénommé « indicateur de surface ». 
+   
+   L’indicateur est calculé annuellement. 
       
-      La méthodologie de calcul de l'indicateur est annexée au contrat de concession en cours et disponible dans le dossier "Docs" ( A COMPLETER).
+Périmètre mesuré
+   La méthode ne s’applique qu’aux sections courantes d’autoroutes et exclut notamment les bifurcations, les échangeurs, les aires et les plateformes de péage. 
+   
+   La méthode ne s’applique pas aux chaussées en béton. 
+   
+   Toute section appartenant au périmètre ainsi défini doit faire l'objet d'au moins une auscultation dans la durée du contrat d'entreprise.
+   
+   La fiche complète sur la méthode de calcul de l'indicateur est annexée au contrat de concession en cours et disponible dans le dossier "Docs" ( A COMPLETER).
+
+**L'indice IDEG décrit le niveau de dégravité pour les dégradations de surface.**
+   
+.. figure:: /docs/source/ind_iqra_.png
+   :width: 50%
+   :align: center
+   :alt: Indice de dégradation de surface 
+   
+**L'indice IDEG décrit le niveau de dégravité pour les dégradations de surface.**
+   
+.. figure:: /docs/source/ind_ideg.png
+   :width: 50%
+   :align: center
+   :alt: Indice de dégradation de surface 
+
 
 Objectif
-      L’indicateur est assorti de deux objectifs :
-            * Objectif 1 : au moins 90% des notes >=3
-            * Objectif 2 : au moins 95% des notes >=2
+   L’indicateur est assorti de deux objectifs :
+   * Objectif 1 : au moins 90% des notes >=3
+   * Objectif 2 : au moins 95% des notes >=2
 
 Mécanisme de pénalité
-      La pénalité s’applique dès qu’un des deux objectifs n’est pas atteint.
+   La pénalité s’applique dès qu’un des deux objectifs n’est pas atteint.
 
-Propriétaire de données      
+Propriétaire de données
    Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I).
 
 Source de données
