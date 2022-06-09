@@ -10,15 +10,16 @@ Enjeux
 Description
   L'indicateur mesure un état individuel de chacun des ouvrages d’art (OA).
 
-Méthode
+Méthode de calcul
   Méthode de cotation IQOA. 
+  
+  AXXX transmet annuellement la liste des ouvrages d'art classés 3 - 3U (avec leur date de cotation) ainsi que le détail et la justification du classement sur l'échelle IQOA de tous les ouvrages d'art. 
   
   Chaque ouvrage d’art fait l’objet d’une inspection selon l’ITSOA et d’une cotation par AXXX. Les cotations sont réparties sur l’échelle 1 à 3. Chaque année, AXXX évalue le pourcentage du nombre d'ouvrages classés 3 et 3U.
 
 Périmètre mesuré
   Inspection systématique régulière par AXXX de tous les ouvrages de la concession comportant une ouverture de plus de 2 m.
 
-Méthode de calcul
   AXXX transmet annuellement la liste des ouvrages d'art classés 3 - 3U (avec leur date de cotation) ainsi que le détail et la justification du classement sur l'échelle IQOA de tous les ouvrages d'art. 
     
 Objectif
@@ -31,7 +32,7 @@ Mécanisme de pénalité
   La pénalité s’applique en fin contrat de plan puis annuellement en cas de non atteinte de l’un et/ou l’autre des deux objectifs. 
 
 Propriétaire de données
-  Direction du Développement, de l'Ingénierie et de l'Innovation 
+  Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I). 
 
 Source de données
   Fichiers Excel. 
@@ -56,7 +57,13 @@ Méthode de mesure
 
 Transmission des données
   Les données concernant les ouvrages classées "S" et les ouvrages classés "S" depuis plus de 13 semaines sont fournies annuellement sous forme d'un tableau (cf. ci-dessous). 
-  
+
+**Exemple de détermination du nombre d'ouvrages classés S depuis plus de 13 semaines au-déla de la limite du seuil de 2.**
+   
+.. figure:: /docs/source/ind_oa_secu.png
+   :width: 50%
+   :align: center
+   :alt: Tableau
 
 Périmètre mesuré
   Tous les ouvrages d'art de la concession.
@@ -85,13 +92,14 @@ Description
   Dépassement d’un seuil de fonctionnalité des ouvrages d’art au travers de deux paramètres : la portance et la hauteur libre dégagée.
 
 Méthode de 
-  ATMB s’assure de la hauteur libre et de la portance des ouvrages d’art en regard de ses obligations contractuelles et réglementaires. Un état des lieux est fait la première année du contrat pour spécifier la portance et la hauteur libre. 
+  AXXX s’assure de la hauteur libre et de la portance des ouvrages d’art en regard de ses obligations contractuelles et réglementaires. Un état des lieux est fait la première année du contrat pour spécifier la portance et la hauteur libre. 
   
-  ATMB maintient un fichier des hauteurs libres sous ouvrage et de la portance selon un processus qui lui est propre. L’écart est caractérisé par rapport aux annexes techniques au cahier des charges (PS, PI dans le DPAC) ou par rapport à une convention de remise ou par rapport aux PV d’inspection de travaux avant mise en service.
-  Chaque année ATMB met à jour le fichier et signale tous les dépassements de seuils. 
+  AXXX maintient un fichier des hauteurs libres sous ouvrage et de la portance selon un processus qui lui est propre. L’écart est caractérisé par rapport aux annexes techniques au cahier des charges (PS, PI dans le DPAC) ou par rapport à une convention de remise ou par rapport aux PV d’inspection de travaux avant mise en service.
+  
+  Chaque année AXXX met à jour le fichier et signale au concédant tous les dépassements de seuils. 
 
-Périmètre
-  Tous les ouvrages d’une ouverture de plus de 2 m situés dans le DPAC et ouverts à la circulation publique.
+Périmètre mesuré
+  Tous les ouvrages d’une ouverture de plus de 2 m situés sur le DPAC et ouverts à la circulation publique.
   
 Objectif
   Annuellement et sauf dérogations validées par le concédant lors de l’état initial :
@@ -101,11 +109,25 @@ Objectif
 
 
 Mécathisme de pénalité
-  La pénalité s’applique annuellement pour chaque ouvrage d’art qualifié « non fonctionnel » non remis en conformité et ne faisant pas l’objet d’une dérogation. 
+  La pénalité s’applique annuellement pour chaque ouvrage d’art qualifié « non fonctionnel » non remis en conformité et ne faisant pas l’objet d’une dérogation.  
+  
+  Elle est calculée annuellement selon les termes du tableau indicateurs pénalités et l'article 39.7 du cahier des charges.
 
+Modalités de contrôle par l'autorité concédante
+  Pour la hauteur libre :
+  
+  3. examen de la déclaration annuelle de non-conformité
+  4. lors d'audits, examen sur procédure des relevés réalisés
+  5. examen contradictoire dans les cas litigieux.
+  
+  Pour la portance :
+  
+  6. examen de la déclaration annuelle de non-conformité
+  7. examen des attestations montrant le retour à la conformité
+  8. lors d'audits, examen sur site.
 
 Propriétaire de données
-  Direction du Développement, de l'Ingénierie et de l'Innovation 
+  Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I).
 
 Source de données
   Fichier Excel. 
@@ -119,19 +141,19 @@ Enjeux
   Gestion du patrimoine. 
   
 Description
-  Non disponible. A compléter
+  A COMPLETER 2D2I.
 
 Méthode
-  Non disponible. A compléter.
+  A COMPLETER 2D2I.
   
 Objectif
-  Non disponible. 
+  A COMPLETER 2D2I.
   
 Mécathisme de pénalité
-  Sans objet. 
-
+  A COMPLETER 2D2I.
+  
 Propriétaire de données
-   Direction du Développement, de l'Ingénierie et de l'Innovation 
+   Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I).
 
 Source de données
   Fichier Excel. 
