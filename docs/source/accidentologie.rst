@@ -50,7 +50,7 @@ Méthode
 
 .. code-block:: text
   
-  **Rappel définitions**
+  *Rappel définitions*
   
   - Blessés Non Hospitalisés : victimes ayant fait l’objet de soins médicaux mais n’ayant pas été admises comme patients à l’hôpital plus de 24 heures.
   - Blessés Hospitalisés : victimes admises comme patients dans un hôpital plus de 24 heures.
