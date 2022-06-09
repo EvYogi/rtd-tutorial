@@ -4,7 +4,7 @@ Bienvenue dans la documentation XXXX !
 
 .. note::
 
-   La documentation est en cours de production.
+   La documentation est en cours de rédaction.
 
 La documentation couvre le périmètre du rapport d'exécution de la concesssion d'XXXX qui comprend, notamment :
 
@@ -41,7 +41,7 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
 .. toctree::
    :caption: Gestion du trafic
    
-   exploitationroutiere
+   gestiondutrafic
  
 .. toctree::
    :caption: Exploitation routière
