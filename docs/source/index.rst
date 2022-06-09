@@ -32,6 +32,7 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
    :caption: Satisfaction client
    
    satisfactionclients
+   airesderepos
 
 .. toctree::
    :caption: Sécurité routière
