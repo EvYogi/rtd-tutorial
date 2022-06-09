@@ -1,4 +1,4 @@
-Satisfaction des clients
+Satisfaction des usagers
 =========================
 
 Délais de réponse aux sollicitations écrites d'usagers
