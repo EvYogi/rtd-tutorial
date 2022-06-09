@@ -2,8 +2,9 @@
 Maintien de la viabilité du réseau
 ===================================
 
-Viabilité hivernale
---------------------
+
+Viabilité hivernale (neige, verglas)
+-------------------------------------
 
 Enjeux
   Sécurité des usagers - Rapidité et fiabilité des trajets.          
