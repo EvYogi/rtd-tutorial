@@ -25,7 +25,7 @@ Mécathisme de pénalité
   Non défini.
   
 Responsable
-  Direction du Developpement de l'Ingénerie et de l'Innovation (2D2I).
+  Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I).
 
 Source de données
   Fichier Excel ? 
