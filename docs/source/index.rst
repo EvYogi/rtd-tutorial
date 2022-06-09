@@ -33,6 +33,7 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
    :caption: Satisfaction client
    
    satisfactionclients
+   politiquetarifaire
    airesderepos
 
 .. toctree::
