@@ -47,6 +47,8 @@ Méthode
     - Sinon c'est un Accrochage.
     
   - Données accidents croisés avec la GND concernant les accidents corporels (Accident Corporel si le(s) blessé(s)  nécessite(nt) des soins hospitaliers le blessé sera considéré comme HO s’il a un ITT, sinon il sera considéré comme blessé NHO). ::
+
+.. code-block:: text
   
   **Rappel définitions**
   
