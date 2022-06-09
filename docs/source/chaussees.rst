@@ -1,7 +1,7 @@
 Entretien de la chaussée
 ========================
 
-Indicateur ISTRU : État structurel de la chaussée
+Indicateur ISTRU : État structurel de chaussées
 ----------------------------------------------------
 
 
