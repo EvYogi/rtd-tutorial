@@ -8,26 +8,24 @@ Enjeux
   Conservation du patrimoine.
 
 Description
-  L'indicateur mesure un état individuel de chacun des ouvrages d’art.
+  L'indicateur mesure un état individuel de chacun des ouvrages d’art (OA).
 
 Méthode
   Méthode de cotation IQOA. 
   
-  Chaque ouvrage d’art fait l’objet d’une inspection selon l’ITSOA et d’une cotation par ATMB. Les cotations sont réparties sur l’échelle de 1 à 3. 
+  Chaque ouvrage d’art fait l’objet d’une inspection selon l’ITSOA et d’une cotation par AXXX. Les cotations sont réparties sur l’échelle 1 à 3. Chaque année, AXXX évalue le pourcentage du nombre d'ouvrages classés 3 et 3U.
+
+Périmètre mesuré
+  Inspection systématique régulière par AXXX de tous les ouvrages de la concession comportant une ouverture de plus de 2 m.
 
 Méthode de calcul
-  
-  ATMB transmet annuellement la liste des ouvrages d'art classés 3 - 3U (avec leur date de cotation) ainsi que le détail et la justification du classement sur l'échelle IQOA de tous les ouvrages d'art. 
-  
-  ATMB évalue le pourcentage du nombre d’ouvrages d’art classés en 3 et 3U par un inspecteur indépendant.
-  
-  L’indicateur s’applique qu’aux sections courantes d’autoroutes et exclut notamment les bifurcations, les échangeurs, les aires et les plateformes de péage. La méthode ne s’applique pas aux chaussées béton. 
-
+  AXXX transmet annuellement la liste des ouvrages d'art classés 3 - 3U (avec leur date de cotation) ainsi que le détail et la justification du classement sur l'échelle IQOA de tous les ouvrages d'art. 
+    
 Objectif
   L’objectif est d’atteindre en fin contrat d’entreprise puis annuellement :
   
-    - Objectif 1 :  0% d'ouvrages classés 3U sauf ouvrages devenus 3U en cours de contrat : diagnostic et mesures conservatoires prises dans les 2 années suivant le classement en 3U  
-    - Objectif 2 : moins de 5% d'ouvrages classés en 3 et 3U sur le réseau autoroutier et 10% maximum sur la RN 205 
+    - Objectif 1 :  0% d'ouvrages classés 3U sauf ouvrages devenus 3U en cours de contrat : diagnostic et mesures conservatoires prises dans les 2 années suivant le classement en 3U ;  
+    - Objectif 2 : moins de 5% d'ouvrages classés en 3 et 3U sur le réseau autoroutier et 10% maximum sur la RN 205. 
 
 Mécanisme de pénalité
   La pénalité s’applique en fin contrat de plan puis annuellement en cas de non atteinte de l’un et/ou l’autre des deux objectifs. 
@@ -40,31 +38,37 @@ Source de données
 
 
 
-
 Sécurité sur ouvrage d'art
 ---------------------------
+
 Enjeux
   Sécurité des usagers.
   
 Description
   Mise en cause de la sécurité des usagers du fait d’un ouvrage d’art.
 
-Méthode
-  À chaque événement impactant un ouvrage d'art et susceptible d’avoir un impact sur la sécurité des usagers ainsi qu’à chaque inspection, ATMB doit vérifier la cotation « sécurité » de celui -ci au regard des critères de la cotation “S” de l’IQOA. 
+Méthode de mesure
+  À chaque événement impactant un ouvrage d'art et susceptible d’avoir un impact sur la sécurité des usagers ainsi qu’à chaque inspection, AXXX doit vérifier la cotation « sécurité » de celui-ci au regard des critères de la cotation “S” de l’IQOA. 
+  
+  La liste des ouvrages classés en "S” est tenue à jour par AXXX. 
   
   Le cas échéant, l’ouvrage ainsi coté “S” est ajouté sans délai à la liste des ouvrages classés “S" avec sa date de classement. La date de sortie de cette liste correspond à la mise en œuvre de travaux définitifs ou provisoires de sécurité permettant le déclassement “S” de l’ouvrage.      
+
+Transmission des données
+  Les données concernant les ouvrages classées "S" et les ouvrages classés "S" depuis plus de 13 semaines sont fournies annuellement sous forme d'un tableau (cf. ci-dessous). 
   
-  La liste des ouvrages classés en "S” est tenue à jour par ATMB, indiquant notamment les travaux définitifs et provisoires de sécurité mis en oeuvre ayant permis le déclassement de l'ouvrage. 
+
+Périmètre mesuré
+  Tous les ouvrages d'art de la concession.
 
 Objectif
   L’objectif est, dans une même semaine, de ne pas avoir plus de 2 ouvrages d’art classés “S” étant restés classés plus de 13 semaines.     
   
 Mécathisme de pénalité
-  Constat et déclenchement.  
-  La pénalité s’applique pour chaque ouvrage classé “S” depuis plus de 13 semaines au-delà de 2 simultanément (le décompte des semaines se fait en année glissante).  
+  Constat et déclenchement. La pénalité s’applique pour chaque ouvrage classé “S” depuis plus de 13 semaines au-delà de 2 simultanément (le décompte des semaines se fait en année glissante).  
 
 Propriétaire de données
-  Direction du Développement, de l'Ingénierie et de l'Innovation 
+  Direction du Développement, de l'Ingénierie et de l'Innovation. 
 
 Source de données
   Fichier Excel.
