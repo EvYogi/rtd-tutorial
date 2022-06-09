@@ -48,3 +48,10 @@ Méthode
     - Sinon c'est un Accrochage.
     
   - Données accidents croisés avec la GND concernant les accidents corporels (Accident Corporel si le(s) blessé(s)  nécessite(nt) des soins hospitaliers le blessé sera considéré comme HO s’il a un ITT, sinon il sera considéré comme blessé NHO).
+  
+  ::
+  **Rappel définitions**
+  
+  Blessés Non Hospitalisés : victimes ayant fait l’objet de soins médicaux mais n’ayant pas été admises comme patients à l’hôpital plus de 24 heures.
+  Blessés Hospitalisés : victimes admises comme patients dans un hôpital plus de 24 heures.
+  Tués : toutes personnes qui décèdent sur le coup ou dans les trente jours qui suivent l’accident.
