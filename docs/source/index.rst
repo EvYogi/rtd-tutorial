@@ -27,6 +27,7 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
 
    chaussees
    ouvrages
+   accessibilite
 
 .. toctree::
    :caption: Satisfaction client
