@@ -45,10 +45,10 @@ Objectif
 Propriétaire de données
   Direction Réseau Environnement / Responsable Environnement & Patrimoine
 
-Résultats 
-  - res de repos et de service (%) : 100 % (14 sur 14 unités)
-  
-  Centres d'exploitation (%) : 100 % (3 sur 3)
+Résultats
+
+  - Aires de repos et de service (%) : 100 % (14 sur 14 unités)
+  - ntres d'exploitation (%) : 100 % (3 sur 3)
 
 
 
