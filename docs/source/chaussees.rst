@@ -29,24 +29,27 @@ Objectif
    
    * Objectif 1 : 37,5% des notes >=3
    * Objectif 2 : 93,4% des notes >=2
-
-
-.. figure:: ISTRU-tableau-exemple.png
-   :width: 50%
-   :align: center
-   :alt: Résultats de calcul 
    
-
-.. figure:: ISTRU-tout-reseau.png
-   :width: 50%
-   :align: center
-   :alt: Exemple de graphe
+**L'indice IDEG décrit le niveau de dégravité pour les dégradations de surface.**
    
-
-.. figure:: ISTRU-tout-reseau.png
+.. figure:: /docs/source/ind_ideg.png
    :width: 50%
    :align: center
-   :alt: Exemple de graphe
+   :alt: Indice de dégradation de surface 
+
+   **L'indice intermédiaire IQSPO décrit la qualité structurelle de la chaussée au travers de l'uni longitudinal sur les petites ondes, par une analyse différenciée des notes entre les bandes de roulement et l'axe de la voie.**
+
+.. figure:: /docs/source/ind_iqspo.png
+   :width: 50%
+   :align: center
+   :alt: indice de qualité structurelle
+   
+   **L'indicateur ISTRU résulte du croisement matriciel des deux indices intermédiaires.**
+
+.. figure:: /docs/source/ind_istru.png
+   :width: 50%
+   :align: center
+   :alt: Indice ISTRU
 
 Mécanisme de pénalité
    Appliqué en cas de non-respect des seuils.
