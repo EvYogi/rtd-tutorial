@@ -1,16 +1,19 @@
 Accidentologie
 ====================
 
-Taux Accident / Km parcourus
--------------
+
+Taux d'accidentologie
+-----------------------
 
 Enjeux
-  Mesurer le taux d'accident sur le réseau.
+  Mesurer le taux d'accidentologie sur le réseau.
 
 Description
   ...
+  
 Méthode de calcul
   ...
+  
 Objectif
   ...
 
@@ -18,19 +21,11 @@ Mécathisme de pénalité
   ...
 
 Propriétaire de données 
-  Direction Réseau Environnement
+  Direction Réseau Environnement.
 
 Source de données
-  Rapport BO + traitement manuel fichier Excel
+  Sierra et base de donnée de la gendarmerie.
+
+Rapport BO
+  Le rapport ``Accidents``.
   
-
-Indicateur #2
--------------
-
-* Enjeux
-* Description
-* Méthode de calcul
-* Objectif
-* Mécathisme de pénalité
-* Propriétaire de données
-* Source de données
