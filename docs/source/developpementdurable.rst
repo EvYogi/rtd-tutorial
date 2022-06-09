@@ -61,37 +61,33 @@ Enjeux
 Description
   Mesurer la durée et la longueur des bouchons (H.km) pour estimer la pollution de l'air engendrée : 
   
-  - Putions locales (particules, gaz toxiques) susceptibles d’entraîner des dommages immédiats dans une aire géographique donnée
-Les rejets de CO2 qui contribuent à l’effet de serre et posent un grave problème à l’échelle mondiale.
+  - Les pollutions locales (particules, gaz toxiques) susceptibles d’entraîner des dommages immédiats dans une aire géographique donnée;
+  - Les rejets de CO2 qui contribuent à l’effet de serre et posent un grave problème à l’échelle mondiale.
 
 Méthode de calcul
   Les bouchons se quantifient en volume d’encombrement et s’expriment en heures.kilomètres (HKM). 
-  
-  Le volume est calculé ainsi ::
-    
-    produit de la durée du bouchon (exprimé en heures) par la longueur moyenne (exprimée en km) et le nombre de voies. 
-  
-  Mesurer la longueur et la durée des bouchons pour calculer le gaz 
-    ``Type event = "bouchon"``, ``Date_debut``,  ``Date_fin`` , ``Longueur_queue``
 
 ::
+  Le volume est calculé ainsi : produit de la durée du bouchon (exprimé en heures) par la longueur moyenne (exprimée en km) ramené au nombre de voies.
+
+  Pour les événements de type ``Type event = "Bouchon"``:
+  
+    ``Bouchon H.km`` = (``Date_fin`` - ``Date_debut``) * max (``Longueur_queue``)/1000
    
-    Bouchon H.km = (Date_fin - Date_debut) * max (Longueur_queue)/1000
-    
 Objectif
-  NA
+  Non défini.
 
 Mécathisme de pénalité
-  NA
+  Non défini.
 
 Propriétaire de données
   Direction Réseau Environnement
   
 Source de données
-  ``Sierra 1``
+  Sierra
 
 Rapport BO
-  ``Bouchon OK``
+  Le rapport ``Bouchon OK``. 
 
 
 Consommation de produits phytosanitaires (kg/km)
