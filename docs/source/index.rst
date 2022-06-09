@@ -34,13 +34,18 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
    satisfactionclients
 
 .. toctree::
-   :caption: Sécurité
+   :caption: Sécurité routière
    
    accidentologie
    viabilitehivernale
 
 .. toctree::
-   :caption: Information sécurité trafic
+   :caption: Gestion du trafic
+   
+   exploitationroutiere
+ 
+.. toctree::
+   :caption: Exploitation routière
    
    exploitationroutiere
 
