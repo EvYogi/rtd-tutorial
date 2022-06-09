@@ -6,10 +6,10 @@ Taux d'accidentologie
 -----------------------
 
 Enjeux
-  Mesurer le taux d'accidentologie sur le réseau.
+  Sécurité routière des usagers. 
 
 Description
-  L'indicateur permet d
+  L'indicateur permet de mesurer le taux d'accidentologie sur le réseau.
   
 Méthode de calcul
   Le taux d'accidents est le quotient entre le nombre d'accidents (materiels et corporels) et le nombre de kilomètres parcourus. On parle d'accidents pour 100 millions de véhicules*kilomètres parcourus. 
