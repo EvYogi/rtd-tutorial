@@ -1,5 +1,5 @@
 Entretien de la chaussée
-========================
+=========================
 
 Indicateur ISTRU : État structurel de chaussées
 ----------------------------------------------------
@@ -22,28 +22,29 @@ Périmètre mesuré
 Méthode de calcul
    La méthode de calcul de l'indicateur repose sur des mesures de dégradations de surface des couches de roulement, et d'uni longitudinal petites ondes, permettant de calculer deux indices intermédiaires : un indice de dégradation IDEG et un indice de qualité structurelle fondé sur l'uni longitudinal petites ondes IQSPO. 
    
-   Ces indices intermédiares sont ensuite croisés entre eux pour définir un indicateur global dénommé indicateur structurel ISTRU. La fiche complète sur la méthode de calcul est annexée au contrat de concession en cours d'exécution et disponible dans le dossier "Docs" (A COMPLETER). 
-   
-**L'indice IDEG décrit le niveau de dégravité pour les dégradations de surface.**
-   
+   Ces indices intermédiares sont ensuite croisés entre eux pour définir un indicateur global dénommé indicateur structurel ISTRU. La fiche complète sur la méthode de calcul est annexée au contrat de concession en cours d'exécution et disponible dans le dossier "Docs" (A COMPLETER).   
+
 .. figure:: /docs/source/ind_ideg.png
    :width: 50%
    :align: center
    :alt: Indice de dégradation de surface 
+   
+   *L'indice IDEG décrit le niveau de dégravité pour les dégradations de surface.*
 
-   **L'indice intermédiaire IQSPO décrit la qualité structurelle de la chaussée au travers de l'uni longitudinal sur les petites ondes, par une analyse différenciée des notes entre les bandes de roulement et l'axe de la voie.**
 
 .. figure:: /docs/source/ind_iqspo.png
    :width: 50%
    :align: center
    :alt: indice de qualité structurelle
    
-   **L'indicateur ISTRU résulte du croisement matriciel des deux indices intermédiaires.**
+   *L'indice intermédiaire IQSPO décrit la qualité structurelle de la chaussée au travers de l'uni longitudinal sur les petites ondes, par une analyse différenciée des notes entre les bandes de roulement et l'axe de la voie.*
 
 .. figure:: /docs/source/ind_istru.png
    :width: 50%
    :align: center
    :alt: Indice ISTRU
+   
+   *L'indicateur ISTRU résulte du croisement matriciel des deux indices intermédiaires.*
 
 Objectif
    A définir pendant la durée du contrat d'entreprise ( A METTRE A JOUR).
@@ -90,13 +91,12 @@ Périmètre mesuré
    
    La fiche complète sur la méthode de calcul de l'indicateur est annexée au contrat de concession en cours et disponible dans le dossier "Docs" ( A COMPLETER).
 
-   **Chacun des index est comparé à des seuils de façon à les réunir par classes.**
-
    .. figure:: /docs/source/ind_iqra_unitaires.png
       :width: 50%
       :align: center
       :alt: Classification des index unitaires 
-
+      
+      *Chacun des index est comparé à des seuils de façon à les réunir par classes.*
 
    .. figure:: /docs/source/ind_iqra_adherence.png
       :width: 50%
@@ -106,8 +106,9 @@ Périmètre mesuré
 
 Objectif
    L’indicateur est assorti de deux objectifs :
-   * Objectif 1 : au moins 90% des notes >=3
-   * Objectif 2 : au moins 95% des notes >=2
+   
+   - Objectif 1 : au moins 90% des notes >=3
+   - Objectif 2 : au moins 95% des notes >=2
 
 Mécanisme de pénalité
    La pénalité s’applique dès qu’un des deux objectifs n’est pas atteint.
