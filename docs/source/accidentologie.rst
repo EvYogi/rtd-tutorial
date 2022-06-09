@@ -15,10 +15,10 @@ Méthode de calcul
   Le taux d'accidents est le quotient entre le nombre d'accidents (materiels et corporels) et le nombre de kilomètres parcourus. On parle d'accidents pour 100 millions de véhicules*kilomètres parcourus. 
   
 Objectif
-  ...
+  Non défini. 
 
 Mécathisme de pénalité
-  ...
+  Non défini.
 
 Propriétaire de données 
   Direction Réseau Environnement.
