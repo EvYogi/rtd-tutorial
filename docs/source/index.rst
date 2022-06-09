@@ -37,7 +37,6 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
    :caption: Sécurité routière
    
    accidentologie
-   viabilitehivernale
 
 .. toctree::
    :caption: Gestion du trafic
@@ -49,6 +48,11 @@ Les sections :doc:`chaussees` et :doc:`ouvrages` décrivent les indicateurs asso
    
    exploitationroutiere
 
+.. toctree::
+   :caption: Maintien de la viabilité
+   
+   viabilitehivernale
+   
 .. toctree::
    :caption: Développement durable
    
