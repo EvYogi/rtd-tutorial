@@ -58,7 +58,7 @@ Rapport BO
 
 
 
-Histogramme de délais de réponse aux sollicitations de clients (%)
+Histogramme de délais de réponse aux sollicitations d'usagers (%)
 -------------------------------------------------------------------
 
 Enjeux
