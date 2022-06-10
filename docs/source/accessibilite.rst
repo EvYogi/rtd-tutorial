@@ -16,7 +16,7 @@ Méthode
   Un inventaire exhaustif des équipements sur les sites accessibles aux PMR.
   
 Périmètre mesuré
-  Les aires de repos situées sur le réseau d'AXXX.
+  Les aires de repos situées sur le réseau d'ATMB.
   
 Objectif
   Mise en conformité : 100 %
@@ -28,7 +28,7 @@ Responsable
   Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I).
 
 Source de données
-  Fichier Excel ? 
+  Fichier Excel (?)
 
 Rapport BO
   Non disponible.
