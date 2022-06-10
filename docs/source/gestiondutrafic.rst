@@ -96,7 +96,7 @@ Description
   Sont considérés comme événements graves mettant en cause la sécurité des usagers ceux se produisant sur section courante, bretelles et plate-formes de péage. Ils consistent notamment en accident, contresens, véhicules en feu, piétons, animaux, objets sur chaussée et véhicules arrêtés.
 
 Périmètre de mesure
-  L'ensemble du réseau d'AXXX, en permanence. Pour les PMV cela s'entend "hors PMV non gérés par la société". 
+  L'ensemble du réseau d'AXXX, en permanence. Pour les PMV cela s'entend "hors PMV non gérés par la société" => a préciser ???? 
 
 Méthode de calcul 
   L'indicateur calcule la durée comprise entre la réception de cette information au niveau du PC et son signalement par ATMB sur les PMV est enregistrée.
@@ -111,13 +111,9 @@ Méthode de calcul
   
   Sélectionner une plage de dates dans la barre de filtres à gauche et choisir l’onglet « XXX » pour afficher le délai d’affichage PMV.
   
-    - ``Evènements diffusés dans les 3 minutes `` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 3 minutes après leur enregistrement dans SIERRA.
+    - ``Evènements diffusés dans les 3 minutes`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 3 minutes après leur enregistrement dans SIERRA.
     - ``Evènements diffusés dans les 6 minutes`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 6 minutes après leur enregistrement dans SIERRA.
-  
-  Les données brutes sont accessibles dans l’onglet ``XXX `` et vous pouvez les exporter dans un fichier Excel. 
-  
-  L'indicateur calcule la durée comprise entre la réception de cette information au niveau du PC et sa diffusion sur les panneaux PMV. 
-  
+    
   Les événements considérés comme grave où la variable ``TYPE_EVENEMENT = `` :
   
     - ``ACCIDENT``, 
@@ -132,32 +128,39 @@ Méthode de calcul
   
   On distingue deux cas d'affichage possibles : via PAC et ???? .  
   
-  Si l'événement a été affiché via PAC, alors la date de début et la date de fin d'action sont renseignées. Le délai est la différence entre la ``Date_debut_ac`` et la ``date_debut_evt``. 
+  Si l'événement a été affiché via PAC, alors la date de début et la date de fin d'action sont renseignées. Le délai est la différence entre la ``Date_debut_ac`` et la ``date_debut_evt``.  
   
-  Si l'événement n'a pas été affiché via PAC, le champ ``FIE = NULL`` et le champ ``Evts sans affichage PMV via PAC = NONaffichage". Dans ce cas de figure, le délai est calculé à partir de ... A COMPLETER.
+.. prompt::
+  ``délai``= ``Date_debut_ac`` - ``date_debut_evt``
+
+
+Si l'événement n'a pas été affiché via PAC, le champ ``FIE = NULL`` et le champ ``Evts sans affichage PMV via PAC = NONaffichage". Dans ce cas de figure, le délai est calculé à partir de ... A COMPLETER.
+  
+Les données brutes sont accessibles dans l’onglet ``XXX `` et vous pouvez les exporter dans un fichier Excel. 
   
 Règles métier / Exceptions
-  L'indicateur doit **exclure** les événements produits sur une aire de service (la variable ``Presence_Aire_Service = Non ou Nan``).
+  L'indicateur doit **exclure** :
   
-  Voici les restrictions :
-  -	Exclure tous les événements Z-test ; Annulé ; Hors Concession
-  -	Exclure tous les événements sur les Aires et sur les Lit d’arret
-  -	Exclure tous les événements 
-    - en bretelle entrée pour lesquels il n’y a pas de PIA (principalement RN205) ou PMV pour Bif
+    - tous les événements produits sur une aire de service (la variable ``Presence_Aire_Service = 'Non'`` ou vide).
+    -	tous les événements Z-test ; Annulé ; Hors Concession
+    -	tous les événements sur les Aires et sur les Lit d’arret
+    -	tous les événements :
+    
+      - en bretelle entrée pour lesquels il n’y a pas de PIA (principalement RN205) ou PMV pour Bif
       
-      - RN205
-      
-        - S1 : Bretelle entrée Vigie, Georgeanne, Aire Graviere, Bagna-Houches, Trabet, Fontaine, aire Chatelard, EDF et Chedde + Bretelle Sortie Vigie 
-        - S2 : Bretelle entrée Bossons, Trabet, Georgeanne, Aire Graviere, Houches, fontaine, aire Chatelard, Servoz et Aire Chedde 
-        
-      - A40
-      
-        - S2 : BE Fayet
-    - (provisoirement tant qu’on n’a pas le PIA TMB dans SIERRA) sur la RN205 dans le S1 du PK 0+000 au PK 4+100 
-    - sur l’A40 dans le S2 entre le PMV de Chatillon (PK 102+500) et le PK 102+848
-    - sur l’A41 dans le S2 entre le PMV de Bardonnex (PK 159+379) et le PK 160+029
-    - sur l’A411 dans le S2 entre le PMV de Vallard (PK 1+350) et le PK 2+139
-    - « Piétons sur la chaussée », « Animal sur chaussée », « Objets sur la chaussée », « Produit sur la chaussée » ayant une durée de vie de moins de 3 min
+        - RN205
+
+          - S1 : Bretelle entrée Vigie, Georgeanne, Aire Graviere, Bagna-Houches, Trabet, Fontaine, aire Chatelard, EDF et Chedde + Bretelle Sortie Vigie 
+          - S2 : Bretelle entrée Bossons, Trabet, Georgeanne, Aire Graviere, Houches, fontaine, aire Chatelard, Servoz et Aire Chedde 
+
+        - A40
+
+          - S2 : BE Fayet
+      - (provisoirement tant qu’on n’a pas le PIA TMB dans SIERRA) sur la RN205 dans le S1 du PK 0+000 au PK 4+100 
+      - sur l’A40 dans le S2 entre le PMV de Chatillon (PK 102+500) et le PK 102+848
+      - sur l’A41 dans le S2 entre le PMV de Bardonnex (PK 159+379) et le PK 160+029
+      - sur l’A411 dans le S2 entre le PMV de Vallard (PK 1+350) et le PK 2+139
+      - « Piétons sur la chaussée », « Animal sur chaussée », « Objets sur la chaussée », « Produit sur la chaussée » ayant une durée de vie de moins de 3 min
 
 
 Objectif
