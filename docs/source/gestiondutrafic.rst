@@ -169,7 +169,7 @@ Propriétaire de données
   Direction Réseau Environnement
   
 Source de données
-  Sierra
+  SIERRA
   
 Rapport BO
   Le rapport ``délai_AFFICHAGE_PMV_- _V10-4sma``.
@@ -188,18 +188,17 @@ Description
 Méthode de calcul
   Pour tracer l'histogramme des coupures, vous devez vous connecter à l'interface de Business Objects et sélectionner le rapport ``Liste Coupures``. Puis préciser une plage de dates dans la barre à filtre à gauche et exécuter la requête. Choisir l'onglet "XXX" pour afficher la liste des événements (``Type_evt = Coupure``). 
   
-  A partir de la liste affichée, la durée de chaque coupure est calculée et renseignée dans la variable ``DUREE_EN_HEURE`` : différence entre``Date_debut`` et ``Date_fin`` convertie en heures. 
+  A partir de la liste affichée, la durée est calculée et renseignée dans la variable ``DUREE_EN_HEURE`` : différence entre``Date_debut`` et ``Date_fin`` convertie en heures pour chaque coupure. 
   
   Il est possible d'extraire la liste des événements au format Excel puis tracer l'histogramme en positionnant le nombre de coupures heure par heure. 
 
-.. figure:: /docs/source/hist_coupures.png
+.. figure:: /docs/source/hist_coupure.png
  :width: 80%
  :align: center
  :alt: Histogramme des coupures
 
 Règles métier/ Exceptions
-    1. Ne pas prendre en compte le plan d'intervention de déclenchements des avalanches (PIDA) dans la variable ``Libelle libre = PIDA`` ( A CONFIRMER)
-    2. Exclure les coupures qui se sont produites sur les bretelles (la variable ``Bretelle`` doit être vide).
+    1. Exclure les coupures qui se sont produites sur les bretelles (la variable ``Bretelle`` doit être vide).
 
 Source de données
   SIERRA
@@ -219,13 +218,17 @@ Description
   Calculer la durée des PGT declenchés au cours de l'année.
   
 Méthode de calcul
-  Parmi les événements de type ``Type_evt = Mesure``, calculer la durée de chaque PGT entre ``Date_debut`` et ``Date_fin`` en heure puis additionner les durées.
+  Pour calculer la durée des PGT, vous devez vous connecter à l'interface de Business Objects et sélectionner le rapport ``Liste Mesures``. Puis préciser une plage de dates dans la barre à filtre à gauche et exécuter la requête. Choisir l'onglet "XXX" pour afficher la liste des événements (``Type_evt = Mesure``). 
   
-  Règles de gestion :
+  A partir de la liste affichée, la durée est calculée et renseignée dans la variable ``DUREE_EN_HEURE`` : différence entre``Date_debut`` et ``Date_fin`` convertie en heures pour chaque mesure.
+  
+  Il est possible d'extraire les données brutes à partir de l'onglet "Données brutes".
+
+Règles de gestion / Exceptions
     1. Ne pas prendre en compte le plan d'intervention de déclenchements des avalanches (PIDA) dans ``Nom_Mesure = PIDA`` ( A CONFIRMER)
 
 Base de données
-  Sierra
+  SIERRA
 
 Rapport BO
   Le rapport ``Liste Mesures``.
