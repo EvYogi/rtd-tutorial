@@ -121,15 +121,15 @@ Mécathisme de pénalité
 Modalités de contrôle par l'autorité concédante
   Pour la hauteur libre :
   
-  3. examen de la déclaration annuelle de non-conformité
-  4. lors d'audits, examen sur procédure des relevés réalisés
-  5. examen contradictoire dans les cas litigieux.
-  
-  Pour la portance :
-  
-  6. examen de la déclaration annuelle de non-conformité
-  7. examen des attestations montrant le retour à la conformité
-  8. lors d'audits, examen sur site.
+    3. examen de la déclaration annuelle de non-conformité
+    4. lors d'audits, examen sur procédure des relevés réalisés
+    5. examen contradictoire dans les cas litigieux.
+
+    Pour la portance :
+
+    6. examen de la déclaration annuelle de non-conformité
+    7. examen des attestations montrant le retour à la conformité
+    8. lors d'audits, examen sur site.
 
 Propriétaire de données
   Direction du Développement, de l'Ingénierie et de l'Innovation (2D2I).
