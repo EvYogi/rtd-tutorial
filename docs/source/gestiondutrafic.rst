@@ -93,26 +93,20 @@ Enjeux
 Description
   L’indicateur permet de mesurer le temps que met ATMB à signaler aux usagers un événement grave sur son réseau par panneaux à Messages Variable (PMV).
   
-  Sont considérés comme événements graves mettant en cause la sécurité des usagers ceux se produisant sur section courante, bretelles et plate-formes de péage. Ils consistent notamment en accident, contresens, véhicules en feu, piétons, animaux, objets sur chaussée et véhicules arrêtés.
+  Il s'agit de calculer la durée comprise entre la réception de cette information au niveau du PC et son signalement par ATMB sur les PMV est enregistrée. En cas d’événements simultanés, seul l’élément prioritaire est pris en compte dans le calcul. 
+    
+  Un inventaire permanent des événements graves est tenu à jour par ATMB, permettant une exploitation statistique annuelle établissant les pourcentages d’événements se situant dans les seuils correspondants aux objectifs. 
 
 Périmètre de mesure
-  L'ensemble du réseau d'AXXX, en permanence. Pour les PMV cela s'entend "hors PMV non gérés par la société" => a préciser ???? 
-
-Méthode de calcul 
-  L'indicateur calcule la durée comprise entre la réception de cette information au niveau du PC et son signalement par ATMB sur les PMV est enregistrée.
+  L'ensemble du réseau d'AXXX, en permanence. Pour les PMV cela s'entend "hors PMV non gérés par la société" => besoin de précision (!) 
   
-  Pour les PMV, en cas d’événements simultanés, seul l’élément prioritaire est pris en compte dans le calcul. 
-    
-  Un inventaire permanent des événements graves est tenu à jour par ATMB, permettant une exploitation statistique annuelle établissant les pourcentages d’événements se situant dans les seuils correspondants aux objectifs.    
-  
-
 Méthode de calcul
   Pour calculer le délai entre événement grave et message PMV, vous devez vous connecter à l’interface de BusinessObjects et sélectionner le rapport ``délai_AFFICHAGE_PMV_- _V10-4sma``. 
   
   Sélectionner une plage de dates dans la barre de filtres à gauche et choisir l’onglet « XXX » pour afficher le délai d’affichage PMV.
   
-    - ``Evènements diffusés dans les 3 minutes`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 3 minutes après leur enregistrement dans SIERRA.
-    - ``Evènements diffusés dans les 6 minutes`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 6 minutes après leur enregistrement dans SIERRA.
+    - ``% evt <3min (tout evt)`` : affiche le pourcentage d’événements transmis et diffusés dans les 3 minutes après leur enregistrement dans SIERRA.
+    - ``% evt <6min (tous evts)`` : affiche le pourcentage d’événements transmis et diffusés dans les 6 minutes après leur enregistrement dans SIERRA.
     
   Les événements considérés comme grave où la variable ``Type_evt =`` :
   
@@ -126,16 +120,15 @@ Méthode de calcul
     - ``VEHICULE EN FEU``, 
     - ``PIETON SUR LA CHAUSSEE``. 
   
-  On distingue deux cas d'affichage possibles : via PAC et ???? .  
+  On distingue deux cas d'affichage possibles : via PAC et ??? 
   
-  Si l'événement a été affiché via PAC, alors la date de début et la date de fin d'action sont renseignées. Le délai est la différence entre la ``Date_debut_ac`` et la ``date_debut_evt``.  
+    1. Si l'événement a été affiché via PAC, alors la date de début et la date de fin d'action sont renseignées. Le délai est la différence entre la ``Date_debut_ac`` et la ``date_debut_evt``.  
   
 .. prompt::
   ``délai``= ``Date_debut_ac`` - ``date_debut_evt``
 
+   2.  Si l'événement n'a pas été affiché via PAC, le champ ``FIE = NULL`` et le champ ``Evts sans affichage PMV via PAC = NONaffichage". Dans ce cas de figure, le délai est calculé à partir de ... A COMPLETER.
 
-Si l'événement n'a pas été affiché via PAC, le champ ``FIE = NULL`` et le champ ``Evts sans affichage PMV via PAC = NONaffichage". Dans ce cas de figure, le délai est calculé à partir de ... A COMPLETER.
-  
 Les données brutes sont accessibles dans l’onglet ``XXX `` et vous pouvez les exporter dans un fichier Excel. 
   
 Règles métier / Exceptions
