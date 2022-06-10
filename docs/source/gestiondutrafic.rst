@@ -3,8 +3,8 @@ Info trafic
 
 
 
-Délai événement grave et message par la radio 107.7
------------------------------------------------------
+Délai entre événement grave et message par la radio 107.7
+----------------------------------------------------------
 
 Enjeux
   Sécurité des usagers.
@@ -20,13 +20,23 @@ Périmètre de mesure
   Un inventaire permanent des événements graves est tenu à jour par AXXX, permettant une exploitation statistique annuelle établissant les pourcentages d'événements se situant dans les seuils correspondants aux objectifs.
 
 Méthode de calcul 
+  Pour calculer le délai entre événement grave et message sur les antennes de la radio 107.7, vous devez vous connecter à l’interface 107.7 (INSERER LE LIEN), sélectionner une plage de dates et exécuter la requête. 
+   
+   Après avoir sélectionné la plage de dates, les indicateurs sont calculés automatiquement :
+   
+  - ``Evènements diffusés dans les 4 minutes suivant la déclaration`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 4 minutes après leur enregistrement dans SIERRA.
+  - ``Evènements diffusés dans les 8 minutes suivant la déclaration`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 8 minutes après leur enregistrement dans SIERRA.
+
+  Les données brutes sont affichées plus loin et vous pouvez les exporter dans un fichier Excel à l’aide du bouton « Export Excel ».
+
   L'indicateur calcule la durée comprise entre la réception de cette information au niveau du PC et sa diffusion sur les antennes radio de 107.7. 
   
 .. prompt::
   'DELAI_TOTAL' = 'DELAI_ENVOI' + 'DELAI_DIFFUSION'
   'DELAI_ENVOI' = 'DATE_ENVOI' - 'DATE_EVENEMENT'
   'DELAI_DIFFUSION' = 'DATE_DIFFUSION' - 'DATE_ENVOI'
-    
+  
+  INSERER LA FORMULE PPOUR CALCULER LE POURCENTAGE   
     
 .. figure:: /docs/source/duree_107.png
  :width: 80%
@@ -34,9 +44,23 @@ Méthode de calcul
  :alt: Schema 107.7
 
 Règles métier / Exceptions
-  L'indicateur doit **prendre en compte** les événements de type : ``TYPE_EVENEMENT`` = ``ACCIDENT``, ``OBSTACLE SUR LA CHAUSSEE``, ``PANNE``, ``ANIMAL ERRANT``, ``CONTRE SENS``, ``ANIMAL CHAUSSEE``, ``VEHICULE EN FEU``, ``PIETON SUR LA CHAUSSEE``. 
+  L'indicateur doit **prendre en compte** les événements de type ``TYPE_EVENEMENT`` :
   
-  L'indicateur doit **exclure** les événements produits sur une aire de service (champ ``AIRE_SERVICE = 0``).
+    - ``ACCIDENT``, 
+    - ``OBSTACLE SUR LA CHAUSSEE``, 
+    - ``PANNE``, 
+    - ``ANIMAL ERRANT``, 
+    - ``CONTRE SENS``, 
+    - ``ANIMAL CHAUSSEE``,
+    - ``VEHICULE EN FEU``, 
+    - ``PIETON SUR LA CHAUSSEE``. 
+  
+  L'indicateur doit **exclure** les événements produits sur une aire de service (champ ``AIRE_SERVICE = 0``). 
+  
+  *ATTENTION: ce champ n'est pas disponible dans les données affichées. Ce critère est pris en compte au moment de l'extraction des événements depuis SIERRA avant de les insérer dans la base de données 107.7.*
+
+En cas d'anomalie / asence de données
+  Spécifier le traitement à appliquer. 
        
 Objectif
   L’indicateur est assorti d’un double objectif de résultat par mode de transmission à l’usager:
@@ -60,8 +84,8 @@ Rapport BO
   
   
   
-Délai événement grave et message par PMV
-----------------------------------------------
+Délai événement entre grave et message par PMV
+-------------------------------------------------
 
 Enjeux
   Sécurité des usagers.
@@ -83,7 +107,28 @@ Méthode de calcul
   
 
 Méthode de calcul
-  Les événements considérés comme grave : ``TYPE_EVENEMENT`` = ``ACCIDENT``, ``OBSTACLE SUR LA CHAUSSEE``, ``PANNE``, ``CONTRE SENS``, ``ANIMAL SUR LA CHAUSSEE`` où la variable ``ANIMAL ERRANT = OUI``, ``OBJETS SUR LA CHAUSSEE`` (hors BAU), ``PRODUIT SUR LA CHAUSSEE``, ``VEHICULE EN FEU``, ``PIETON SUR LA CHAUSSEE``. 
+  Pour calculer le délai entre événement grave et message PMV, vous devez vous connecter à l’interface de BusinessObjects et sélectionner le rapport ``délai_AFFICHAGE_PMV_- _V10-4sma``. 
+  
+  Sélectionner une plage de dates dans la barre de filtres à gauche et choisir l’onglet « XXX » pour afficher le délai d’affichage PMV.
+  
+    - ``Evènements diffusés dans les 3 minutes `` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 3 minutes après leur enregistrement dans SIERRA.
+    - ``Evènements diffusés dans les 6 minutes`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 6 minutes après leur enregistrement dans SIERRA.
+  
+  Les données brutes sont accessibles dans l’onglet ``XXX `` et vous pouvez les exporter dans un fichier Excel. 
+  
+  L'indicateur calcule la durée comprise entre la réception de cette information au niveau du PC et sa diffusion sur les panneaux PMV. 
+  
+  Les événements considérés comme grave où la variable ``TYPE_EVENEMENT = `` :
+  
+    - ``ACCIDENT``, 
+    - ``OBSTACLE SUR LA CHAUSSEE``, 
+    - ``PANNE``, 
+    - ``CONTRE SENS``, 
+    - ``ANIMAL SUR LA CHAUSSEE`` où la variable ``ANIMAL ERRANT = OUI``, 
+    - ``OBJETS SUR LA CHAUSSEE`` (hors BAU), 
+    - ``PRODUIT SUR LA CHAUSSEE``, 
+    - ``VEHICULE EN FEU``, 
+    - ``PIETON SUR LA CHAUSSEE``. 
   
   On distingue deux cas d'affichage possibles : via PAC et ???? .  
   
@@ -91,6 +136,7 @@ Méthode de calcul
   
   Si l'événement n'a pas été affiché via PAC, le champ ``FIE = NULL`` et le champ ``Evts sans affichage PMV via PAC = NONaffichage". Dans ce cas de figure, le délai est calculé à partir de ... A COMPLETER.
   
+Règles métier / Exceptions
   L'indicateur doit **exclure** les événements produits sur une aire de service (la variable ``Presence_Aire_Service = Non ou Nan``).
   
   Voici les restrictions :
