@@ -36,7 +36,7 @@ Méthode de calcul
   'DELAI_ENVOI' = 'DATE_ENVOI' - 'DATE_EVENEMENT'
   'DELAI_DIFFUSION' = 'DATE_DIFFUSION' - 'DATE_ENVOI'
   
-  INSERER LA FORMULE PPOUR CALCULER LE POURCENTAGE   
+  >>> INSERER LA FORMULE UTILISEE POUR CALCULER LE POURCENTAGE   
     
 .. figure:: /docs/source/duree_107.png
  :width: 80%
@@ -127,7 +127,7 @@ Méthode de calcul
 .. prompt::
   ``délai``= ``Date_debut_ac`` - ``date_debut_evt``
 
-   2.  Si l'événement n'a pas été affiché via PAC, le champ ``FIE = NULL`` et le champ ``Evts sans affichage PMV via PAC = NONaffichage". Dans ce cas de figure, le délai est calculé à partir de ... A COMPLETER.
+2.  Si l'événement n'a pas été affiché via PAC, le champ ``FIE = NULL`` et le champ ``Evts sans affichage PMV via PAC = NONaffichage". Dans ce cas de figure, le délai est calculé à partir de ... A COMPLETER.
 
 Les données brutes sont accessibles dans l’onglet ``XXX `` et vous pouvez les exporter dans un fichier Excel. 
   
