@@ -89,20 +89,18 @@ Description
   Tracer l'histogramme des délais de réponse qui fait apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
 
 Méthode de calcul
-  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :doc:`Délai de réponse aux sollicitations écrites d'usagers`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante :
-   
-.. figure:: /docs/source/Annotation_histo.png
-   :width: 80%
-   :align: center
-   :alt: Histogramme
-
-
-
+  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :doc:`Délai de réponse aux sollicitations écrites d'usagers`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le nombre d'incidents cumulé et le pourcentage de réponses pour chaque délai puis tracer l'histogramme jour par jour à partir du 11ème jour? 
+ 
 .. figure:: /docs/source/Annotation_tableau.png
    :width: 40%
    :align: center
    :alt: Données de calcul pour l'histogramme. 
-   
+
+
+.. figure:: /docs/source/Annotation_histo.png
+   :width: 80%
+   :align: center
+   :alt: Histogramme 
 
 Objectif
   Non défini.
@@ -128,18 +126,13 @@ Enjeux
   Services aux usagers / qualité.
 
 Description
-  Le bilan des réclamations calcule le nombre de réclamations en les classant par type de niveau : 
-  - ``Niveau 2`` = ``PEAGE``, ``OFFRE DE PEAGE``, ``ACCUEIL & ASSISTANCE``, ``CONDITIONS CIRCULATION``, ``INFRASTRUCTUREs``, ``DEGÂTS A VEHICULE``, ``DEPANNAGE``;
-  - ``Niveau 3`` / ``Niveau 3`` = ``passage``, ``paiement``, ``politique tarifaire``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
-
+  Le bilan des réclamations met en lumière les motifs de réclamation qui ont poussé les usagers à écrire à ATMB. 
+  
 Périmètre mesuré
-  L'ensemble des réclamations adressées à ATMB.
+  L'ensemble des réclamations adressées à ATMB. Dans le bilan des réclamations on distingue deux types de demande :
   
-  - Les réclamations sont les incidents du ``Niveau 1 = RECLAMATIONS``.
-  - Les régularisations sont les transactions effectuées intersociétaires.
-
-  
-  Le bilan des réclamations est annexé au rapport d'exécution de la concession au format Excel (Annexe N°20). 
+  - Réclamations : les incidents de type RECLAMATION (la variable ``Niveau 1 = RECLAMATIONS``)
+  - Régularisations : les transactions effectuées entre les SCA.
 
 Méthode de calcul
   Pour chaque niveau, comptabiliser le nombre d'incidents selon sa classification selon les règles métier suivantes:
@@ -152,6 +145,12 @@ Méthode de calcul
   - Exclure les réclamations de type ``Avis de paiement``
   - Exclure les réclamations de type ``Ticket perdu ou égaré``.
   - Exclure les réclamations de type ``CNP``.
+
+Le bilan des réclamations spécifie le nombre de réclamations par type : 
+  - ``Niveau 2`` = ``PEAGE``, ``OFFRE DE PEAGE``, ``ACCUEIL & ASSISTANCE``, ``CONDITIONS CIRCULATION``, ``INFRASTRUCTUREs``, ``DEGÂTS A VEHICULE``, ``DEPANNAGE``;
+  - ``Niveau 3`` / ``Niveau 4`` = ``passage``, ``paiement``, ``politique tarifaire``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
+  
+  Le template du bilan des réclamations est annexé au rapport d'exécution de la concession au format Excel.. 
 
 Objectif
   Non défini.
