@@ -11,15 +11,51 @@ Enjeux
 Description
   L’indicateur permet d’évaluer la réactivité de ATMB dans ses réponses aux sollicitations des clients – mails, courrriers et contact web. 
 
-
-Méthode
-  La mesure s’effectue entre la date de réception par ATMB du courrier client (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique). 
+  La mesure s’effectue entre la date de réception par ATMB du courrier client (papier ou électronique) et la date de réponse des services ATMB (papier ou électronique).
+  
   La réponse considérée est la 1ère réponse sur le fond et non une réponse d’attente. Un suivi permanent des réponses est effectué par ATMB qui calcule les pourcentages de réponses se situant dans les seuls admissibles.
-
 
 Périmètre mesuré
   L'ensemble des sollicitations écrites pour ATMB. 
 
+Méthode de calcul
+  Avant de calculer le délai de réponse, vous devez faire une extraction de données réalisée par Power Automate. 
+  
+    *Power Automate est un outil permettant d'automatiser des extractions de données (un mini ETL) depuis Dynamics. L'extraction de données conçue spécifiquement pour l'indicateur sur le délai de réponse est détaillée plus loin.*
+  
+  Après avoir extrait les données, vous devez prendre en compte un ensemble de règles métier qui permettent de qualifier les sollicitations écrites. L'indicateur doit prendre en compte les règles suivantes : 
+  
+  - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``;
+  - Prendre en compte les incidents dont la variable ``Origine``:
+  
+    - ``Web``,
+    - ``Formulaire contact (Web)``,
+    - ``Courrier libre``, 
+    - ``E-mail``, 
+    - ``Carte "Parcours le plus long``,
+    - ``Content / Pas content``.
+
+  L'indicateur doit exclure les incidents suivants: 
+  
+  - Exclure les incidents au statut ``Annulé``,
+  - Exclure les incidents dont la variable ``Origine``:
+  
+    - ``téléphone``, 
+    - ``visite``, 
+    - ``Facebook``, 
+    - ``IoT``, 
+    - ``Twitter``, 
+    - ``péage``.
+  - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` :
+  
+      - ``changement de coordonnées``, 
+      - ``changement DA/DM``, 
+      - ``matérialisé/dématérialisé``, 
+      - ``rejet CB``, 
+      - ``rejet prélèvement``.
+    - Exclure les incidents de type ``Niveau 1 = AUTRES`` sauf les incidents où ``Niveau 2 = "Autres" ou NULL``.
+    - Exclure les incidents dont la ``date de réception`` est enregistrée en année précédente (N-1). Par exemple, si vous calculez l'indicateur pour l'année 2021, ne pas prendre en compte 
+    - Exclure les incidents "enfant" où la variable ``Incident parent`` fait référence à un autre incident pour ne pas comptabiliser deux fois la même sollicitation.
 
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
@@ -29,21 +65,6 @@ Objectif
     
   Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
-Méthode de calcul
-  L'indicateur est soumis à un ensemble de règles métier. Il faut donc prendre en compte les règles suivantes:
-  
-  - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``;
-  - Prendre en compte les incidents dont la variable ``Origine`` = ``Web``, ``Formulaire contact (Web)``, ``Courrier libre``, ``E-mail``, ``Carte "Parcours le plus long``, ``Content / Pas content``.
-  - Prendre en compte uniquement les incidents "parent" et non "enfant" pour ne pas comptabiliser deux fois la même demande. La variable ``Incident parent = NULL``.
-
-  L'indicateur exclut les incidents suivants: 
-  
-  - Exclure les incidents au statut ``Annulé``.
-  - Exclure les incidents dont la variable ``Origine`` = ``téléphone``, ``visite``, ``Facebook``, ``IoT``, ``Twitter``, ``péage``.
-  - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4``= ``changement de coordonnées``, ``changement DA/DM``, ``matérialisé/dématérialisé``, ``rejet CB``, ``rejet prélèvement``.
-    - Exclure les incidents du ``Niveau 1 = AUTRES`` sauf les incidents dont le ``Niveau 2 = "Autres" ou NULL``.
-    - Exclure les incidents dont la ``date de réception`` est spécifié en année (N-1).
-  
 Mécathisme de pénalité
   Appliqué en cas de non-respect du deuxième seuil (30 jours calendaires).
 
@@ -68,7 +89,7 @@ Description
   Tracer l'histogramme des délais de réponse qui fait apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
 
 Méthode de calcul
-  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :ref:`Délai de réponse aux sollicitations écrites d'usagers`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante :
+  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :doc:`Délai de réponse aux sollicitations écrites d'usagers`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le pourcentage de réponses jour par jour à partir du 11ème jour de manière suivante :
    
 .. figure:: /docs/source/Annotation_histo.png
    :width: 80%
