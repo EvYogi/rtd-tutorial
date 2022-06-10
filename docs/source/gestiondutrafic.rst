@@ -114,7 +114,7 @@ Méthode de calcul
     - ``Evènements diffusés dans les 3 minutes`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 3 minutes après leur enregistrement dans SIERRA.
     - ``Evènements diffusés dans les 6 minutes`` : affiche le nombre et pourcentage d’événements transmis et diffusés dans les 6 minutes après leur enregistrement dans SIERRA.
     
-  Les événements considérés comme grave où la variable ``TYPE_EVENEMENT = `` :
+  Les événements considérés comme grave où la variable ``Type_evt =`` :
   
     - ``ACCIDENT``, 
     - ``OBSTACLE SUR LA CHAUSSEE``, 
