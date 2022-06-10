@@ -186,14 +186,23 @@ Description
   Tracer l'histogramme des durées des coupures produites au cours de l'année.
   
 Méthode de calcul
-  Parmi les événements de type ``Type_evt = Coupure``, calculer la durée de chaque coupure entre ``Date_debut`` et ``Date_fin`` en heure puis repartir les durées par 
+  Pour tracer l'histogramme des coupures, vous devez vous connecter à l'interface de Business Objects et sélectionner le rapport ``Liste Coupures``. Puis préciser une plage de dates dans la barre à filtre à gauche et exécuter la requête. Choisir l'onglet "XXX" pour afficher la liste des événements (``Type_evt = Coupure``). 
   
-  Règles de gestion :
+  A partir de la liste affichée, la durée de chaque coupure est calculée et renseignée dans la variable ``DUREE_EN_HEURE`` : différence entre``Date_debut`` et ``Date_fin`` convertie en heures. 
+  
+  Il est possible d'extraire la liste des événements au format Excel puis tracer l'histogramme en positionnant le nombre de coupures heure par heure. 
 
-    1. Ne pas prendre en compte le plan d'intervention de déclenchements des avalanches (PIDA) dans ``Nom_Mesure = PIDA`` ( A CONFIRMER)
+.. figure:: /docs/source/hist_coupures.png
+ :width: 80%
+ :align: center
+ :alt: Histogramme des coupures
+
+Règles métier/ Exceptions
+    1. Ne pas prendre en compte le plan d'intervention de déclenchements des avalanches (PIDA) dans la variable ``Libelle libre = PIDA`` ( A CONFIRMER)
+    2. Exclure les coupures qui se sont produites sur les bretelles (la variable ``Bretelle`` doit être vide).
 
 Source de données
-  Sierra
+  SIERRA
 
 Rapport BO
   Le rapport ``Liste Coupures``.
