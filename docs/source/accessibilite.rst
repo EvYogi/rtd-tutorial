@@ -1,7 +1,6 @@
 Accessibilité PMR
 ===================
 
-
 Mise en conformité des sites pour les PMR (%)
 ----------------------------------------------
 
@@ -32,4 +31,3 @@ Source de données
 
 Rapport BO
   Non disponible.
-
