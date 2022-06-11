@@ -78,12 +78,51 @@ Méthode de calcul
         - 11 November: Armistice Day
         - 25 December: Christmas Day
       """
+        rules = [
+        Holiday('New Years Day', month=1, day=1),
+        EasterMonday,
+        Holiday('Labour Day', month=5, day=1),
+        Holiday('Victory in Europe Day', month=5, day=8),
+        Holiday('Ascension Day', month=1, day=1, offset=[Easter(), Day(39)]),
+        #Holiday('Pentecote Day', month=1, day=1, offset=[Easter(), Day(49)]),
+        Holiday('Bastille Day', month=7, day=14),
+        Holiday('Assumption of Mary to Heaven', month=8, day=15),
+        Holiday('All Saints Day', month=11, day=1),
+        Holiday('Armistice Day', month=11, day=11),
+        Holiday('Christmas Day', month=12, day=25)
+    ]
 
 Une fois que vous avez préparé le dataset de référence intégrant toutes les règles mentionnées plus haut, vous devez créer deux nouvelles variables :
 
-    - délai en jours ouvrés = ``date de réception`` - ``Première réponse d'ici`` | sans we / jours fériés.
     - délai en jours calendaire = ``date de réception`` - ``Première réponse d'ici`` 
- 
+    - délai en jours ouvrés = ``date de réception`` - ``Première réponse d'ici`` | sans we / jours fériés.
+
+
+.. code-block:: python
+    
+    # Délai de réponse en jours calendaire
+    df['delai_calendaire'] = df['Première réponse d\'ici'] - df['Date de réception']
+    
+        
+    # Creating some boundaries
+    from datetime import date
+
+    year = 2021
+    start = date(year, 1, 1)
+    end = start + pd.offsets.MonthEnd(12)
+
+    # Creating a custom calendar
+    cal = FrBusinessCalendar()
+    
+    # Getting the holidays (off-days) between two dates
+    holidays_fr = cal.holidays(start=start, end=end)
+    
+    # Délai de réponse en jours ouvrés
+    A = [d.date() for d in df['Date de réception']] 
+    B = [d.date() for d in df['Première réponse d\'ici']]
+    
+    df['delai_jours_ouvres'] = np.busday_count(A, B, holidays=holidays_fr)
+
 
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
