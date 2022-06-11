@@ -6,7 +6,7 @@ Qualité des aires de repos
 
 .. note::
 
-   Premier audit à blanc prévu en 2022, à partir de 2023 l'indicateur sera pénalisable si une aire de repos est notée <=12.
+   Premier audit à blanc prévu en 2022, à partir de 2023 l'indicateur sera pénalisable si une aire de repos reçoit une note inférieure à 12.
    
    Les évaluations sont réalisées et consolidées sous la responsabilité directe de l’autorité concédante puis envoyées à ATMB.
    
