@@ -19,7 +19,7 @@ La documentation couvre le périmètre du rapport d'exécution de la concesssion
 
 Ce rapport est produit chaque année avant le 1er juin (article R. 3131-2, Code de la commande publique).
 
-Chaque chapitre présente les indicateurs associés à la gestion de la concession autoroutière sur le périmètre confié à ATMB.
+Chaque chapitre décrit les enjeux et les indicateurs attendus dans le rapport d'exécution sur le périmètre confié à ATMB.
 
 
 .. toctree::
