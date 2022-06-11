@@ -64,8 +64,8 @@ Transmission des données
    :width: 50%
    :align: center
    :alt: Tableau
-  
-  *Exemple de détermination du nombre d'ouvrages classés S depuis plus de 13 semaines au-déla de la limite du seuil de 2.*
+   
+   *Exemple de détermination du nombre d'ouvrages classés S depuis plus de 13 semaines au-déla de la limite du seuil de 2.*
 
 
 Périmètre mesuré
