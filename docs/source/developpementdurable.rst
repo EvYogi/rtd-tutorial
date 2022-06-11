@@ -68,14 +68,14 @@ Méthode de calcul
 
 .. code-block:: text
   
-  **Définitions**
+  Définitions
   
   Le volume est calculé ainsi : produit de la durée du bouchon (exprimé en heures) par la longueur moyenne (exprimée en km) 
   ramené au nombre de voies.
 
 Pour les événements de type ``Type event = "Bouchon"``:
   
-  ``Bouchon H.km`` = (``Date_fin`` - ``Date_debut``) * max (``Longueur_queue``)/1000
+  ``Bouchon H.km`` = (``Date_fin`` - ``Date_debut``) * max (``Longueur_queue``) / 1000
    
 Objectif
   Non défini.
