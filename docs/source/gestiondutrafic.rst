@@ -15,9 +15,9 @@ Description
   Sont considérés comme événements graves mettant en cause la sécurité des usagers ceux se produisant sur section courante, bretelles et plate-formes de péage. Ils consistent notamment en accident, contresens, véhicules en feu, piétons, animaux, objets sur chaussée et véhicules arrêtés.
 
 Périmètre de mesure
-  L'ensemble du réseau d'AXXX, en permanence. La mesure s’effectue à partir du moment où un événement grave mettant en cause la sécurité des usagers sur le réseau est localisé et confirmé. 
+  L'ensemble du réseau d'ATMB, en permanence. La mesure s’effectue à partir du moment où un événement grave mettant en cause la sécurité des usagers sur le réseau est localisé et confirmé. 
   
-  Un inventaire permanent des événements graves est tenu à jour par AXXX, permettant une exploitation statistique annuelle établissant les pourcentages d'événements se situant dans les seuils correspondants aux objectifs.
+  Un inventaire permanent des événements graves est tenu à jour par ATMB, permettant une exploitation statistique annuelle établissant les pourcentages d'événements se situant dans les seuils correspondants aux objectifs.
 
 Méthode de calcul 
   Pour calculer le délai entre événement grave et message sur les antennes de la radio 107.7, vous devez vous connecter à l’interface 107.7 (INSERER LE LIEN), sélectionner une plage de dates et exécuter la requête. 
@@ -120,9 +120,9 @@ Méthode de calcul
     - ``VEHICULE EN FEU``, 
     - ``PIETON SUR LA CHAUSSEE``. 
   
-  On distingue deux cas d'affichage possibles : via PAC et ??? 
+On distingue deux cas d'affichage possibles : via PAC et ??? 
   
-    1. Si l'événement a été affiché via PAC, alors la date de début et la date de fin d'action sont renseignées. Le délai est la différence entre la ``Date_debut_ac`` et la ``date_debut_evt``.  
+1. Si l'événement a été affiché via PAC, alors la date de début et la date de fin d'action sont renseignées. Le délai est la différence entre la ``Date_debut_ac`` et la ``date_debut_evt``.  
   
 .. prompt::
   ``délai``= ``Date_debut_ac`` - ``date_debut_evt``
@@ -193,7 +193,7 @@ Méthode de calcul
   Il est possible d'extraire la liste des événements au format Excel puis tracer l'histogramme en positionnant le nombre de coupures heure par heure. 
 
 .. figure:: /docs/source/hist_coupure.png
- :width: 80%
+ :width: 50%
  :align: center
  :alt: Histogramme des coupures
 
