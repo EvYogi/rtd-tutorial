@@ -1,7 +1,7 @@
 Ouvrages d'art
 ================
 
-Etat structurel des ouvrages d’art (ouvrages d'ouverture >2m)
+Etat structurel des ouvrages d’art (ouverture >2m)
 ---------------------------------------------------------------
 
 Enjeux
