@@ -11,7 +11,7 @@ Enjeux
 Description
   Mesurer l'état du parc de badges en circulation et d'abonnements actifs. 
   
-  ATMB propose une gamme d’abonnements complète répondant aux principaux besoins de sa clientèle, par exemple, `` Liber-t Evasion``, ``Liber-t Autoroute Blanche``, `` Liber-t Rhône-Alpes``, ``Liber-t Mobilitis``. 
+  ATMB propose une gamme d’abonnements complète répondant aux principaux besoins de sa clientèle: ``Liber-t Evasion``, ``Liber-t Autoroute Blanche``, ``Liber-t Rhône-Alpes``, ``Liber-t Mobilitis``. 
   
 Méthode de calcul
   Pour calculer le nombre de badges par type d'abonnement avec leur pourcentage associé, vous devez vous connecter à l’interface de BusinessObjects et sélectionner le rapport ``Etat du parc TIS``. 
