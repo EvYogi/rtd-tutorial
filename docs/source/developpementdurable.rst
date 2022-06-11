@@ -37,18 +37,17 @@ Enjeux
   Préserver l'environnement.
 
 Description
-  Installer des systèmes de tri des déchets dans les centres d'explotation et sur les aires de repos. 
+  La mesure vise à équiper les centres d'explotation et les aires de repos avec un système de tri des déchets. 
 
-Objectif
-  100% 
+Objectif / Résultats
+  Equipement du parc :
   
-Propriétaire de données
-  Direction Réseau Environnement / Responsable Environnement & Patrimoine
-
-Résultats
-
   - Aires de repos et de service (%) : 100 % (14 sur 14 unités)
   - Centres d'exploitation (%) : 100 % (3 sur 3)
+  
+Propriétaire de données
+  Direction Réseau Environnement / Responsable Environnement & Patrimoine.
+
 
 
 
@@ -103,15 +102,11 @@ Description
  Depuis le 1er janvier 2017, la loi Labbé a interdit l’utilisation des produits phytosanitaires.
 
 Objectif
-  0 % 
+  Consommation de produits phytosanitaires (kg/km) : 0 % 
+  
+  Depuis 2020, ATMB n'utilise plus les produits pour l'exploitation du réseau (0 %). 
 
 Propriétaire de données
-  Direction Réseau Environnement / Poste de contrôle. 
+  Direction Réseau Environnement / Centres d'exploitation. 
   
-Résultats
-   Depuis XXXX, XXX n'utilise plus les produits pour l'exploitation du réseau (0 %). 
-
-
-
-
 
