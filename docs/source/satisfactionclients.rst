@@ -19,9 +19,9 @@ Périmètre mesuré
   L'ensemble des sollicitations écrites pour ATMB. 
 
 Méthode de calcul
-  Avant de calculer le délai de réponse, vous devez faire une extraction de données réalisée par Power Automate. 
+  Avant de calculer le délai de réponse, vous devez faire une extraction de données à l'aide de Power Automate. 
   
-    *Power Automate est un outil permettant d'automatiser des extractions de données (un mini ETL) depuis Dynamics. L'extraction de données conçue spécifiquement pour l'indicateur sur le délai de réponse est détaillée plus loin.*
+    *Power Automate est un outil permettant d'automatiser des extractions de données depuis Dynamics. Un mini ETL a été conçu spécifiquement pour l'indicateur sur le délai de réponse qui est détaillé plus loin.*
   
   Après avoir extrait les données, vous devez prendre en compte un ensemble de règles métier qui permettent de qualifier les sollicitations écrites. L'indicateur doit prendre en compte les règles suivantes : 
   
@@ -59,9 +59,9 @@ Méthode de calcul
 
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
-  
-  * **Seuil 1** : au moins de 90% de réponses en 10 jours ouvrés au plus;
-  * **Seuil 2** : au moins 98,5% de réponses en un mois calendaire au plus. 
+    
+    - **Seuil 1** : au moins de 90% de réponses en 10 jours ouvrés au plus;
+    - **Seuil 2** : au moins 98,5% de réponses en un mois calendaire au plus. 
     
   Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
@@ -129,13 +129,13 @@ Description
   Le bilan des réclamations met en lumière les motifs de réclamation qui ont poussé les usagers à écrire à ATMB. 
   
 Périmètre mesuré
-  L'ensemble des réclamations adressées à ATMB. Dans le bilan des réclamations on distingue deux types de demande :
+  L'ensemble des réclamations adressées à ATMB. Dans le bilan des réclamations on distingue deux types de sollicitation :
   
-  - Réclamations : les incidents de type RECLAMATION (la variable ``Niveau 1 = RECLAMATIONS``)
-  - Régularisations : les transactions effectuées entre les SCA.
+  - Réclamations : addréssées par les usagers à ATMB, ce sont les incidents de type RECLAMATION (la variable ``Niveau 1 = RECLAMATIONS``). Pour compter les réclamations, récupérer les données issues de l'indicateurs :doc:`Délai de réponse aux sollicitations écrites d'usagers`.
+  - Régularisations : les transactions effectuées entre les SCA. Tous les mois les SCA envoient un fichier Excel comprenant toutes les régularisations faites pour le compte ATMB. Le service de facturation d'ATMB transmet également les régularisations passées.  
 
 Méthode de calcul
-  Pour chaque niveau, comptabiliser le nombre d'incidents selon sa classification selon les règles métier suivantes:
+  Pour chaque niveau, comptabiliser le nombre d'incidents selon sa classification  les règles métier suivantes:
   
   - Prendre en compte les incidents dont ``Niveau 1 = RECLAMATION`` au statut ``Résolu`` et ``Actif``.
   - Prendre en compte toutes les réclamations dont la date de réception se situe entre le 1 janvier et le 31 décembre inclus de l'année analysée. 
@@ -146,9 +146,10 @@ Méthode de calcul
   - Exclure les réclamations de type ``Ticket perdu ou égaré``.
   - Exclure les réclamations de type ``CNP``.
 
-Le bilan des réclamations spécifie le nombre de réclamations par type : 
+Le bilan des réclamations classe les réclamations par type : 
   - ``Niveau 2`` = ``PEAGE``, ``OFFRE DE PEAGE``, ``ACCUEIL & ASSISTANCE``, ``CONDITIONS CIRCULATION``, ``INFRASTRUCTUREs``, ``DEGÂTS A VEHICULE``, ``DEPANNAGE``;
-  - ``Niveau 3`` / ``Niveau 4`` = ``passage``, ``paiement``, ``politique tarifaire``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
+  - ``Niveau 3`` = ``passage``, ``paiement``, ``politique tarifaire``, ``disponibilité du personnel``, ``attitude du personnel``, ``disponibilité outils relations client``, ``facturation``, ``politique commerciale``, ``badge``, ``gestion du trafic``, ``signalisation``, ``information trafic``, ``dégâts à véhicule``, ``dépannage``, ``état patrimoine``, ``environnement``, ``sécurité``, ``accès PMR``, ``aires``. 
+  -  ``Niveau 4`` = ...
   
   Le template du bilan des réclamations est annexé au rapport d'exécution de la concession au format Excel.. 
 
@@ -181,7 +182,7 @@ Description
 Méthode de calcul
   **Taux de réclamations** est égal au nombre de réclamations en année divisé par le nombre de km parcourus en année et multiplié par 1 000 000 000, où:
 
-  - Nombre de réclamations = nombre total de réclamations selon :ref:`Bilan des réclamations`.
+  - Nombre de réclamations = nombre total de réclamations selon :doc:`Bilan des réclamations`.
   - Nombre de kilomètre parcourus  = chercher la donnée dans le rapport BO ``aaaa_aaaa -1 KMP ouvert (BOTV) + fermé (BOPR) avec régul``. 
   
 Objectif
