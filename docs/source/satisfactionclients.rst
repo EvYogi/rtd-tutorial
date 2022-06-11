@@ -1,6 +1,8 @@
 Satisfaction des usagers
 =========================
 
+.. target to paragraph:
+
 Délais de réponse aux sollicitations écrites d'usagers
 --------------------------------------------------------
 
@@ -17,6 +19,14 @@ Description
 
 Périmètre mesuré
   L'ensemble des sollicitations écrites pour ATMB. 
+  
+Objectif
+  L’indicateur est assorti d’un double objectif de résultat :
+    
+    - **Seuil 1** : au moins de 90% de réponses en 10 jours ouvrés au plus;
+    - **Seuil 2** : au moins 98,5% de réponses en un mois calendaire au plus. 
+    
+  Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
 
 Méthode de calcul
   Avant de calculer le délai de réponse, vous devez faire une extraction de données à l'aide de Power Automate. 
@@ -60,7 +70,7 @@ Méthode de calcul
   - Exclure les incidents dont la ``date de réception`` est enregistrée en année précédente (N-1). *Par exemple, si vous calculez l'indicateur pour l'année 2021, ne pas prendre en compte les incidents avec la date de réception en 2020.* 
   - Exclure les incidents "enfant" où la variable ``Incident parent`` fait référence à un autre incident pour ne pas comptabiliser deux fois la même sollicitation.
   
-  Le premier objectif de l'indicateur est exprimé en jours ouvrés, ce qui signifie qu'il faut exclure les week-ends et tous les jours fériés de l'année en cours d'étude. Le second objectif est exprimé en jours calendaires (y compris les week-ends et les jours fériés). 
+  Le premier objectif de l'indicateur est exprimé en jours ouvrés, ce qui signifie qu'il faut exclure les week-ends et tous les jours fériés de l'année en cours d'étude. Le second objectif est exprimé en jours calendaires, donc comprend les week-ends et les jours fériés. En fonction de votre outil de calcul (Python, Excel), vous devez spécifier les jours fériés pour l'année en cours d'étude. 
 
 .. code-block:: python
   
@@ -84,7 +94,7 @@ Méthode de calcul
         Holiday('Labour Day', month=5, day=1),
         Holiday('Victory in Europe Day', month=5, day=8),
         Holiday('Ascension Day', month=1, day=1, offset=[Easter(), Day(39)]),
-        #Holiday('Pentecote Day', month=1, day=1, offset=[Easter(), Day(49)]),
+        Holiday('Pentecote Day', month=1, day=1, offset=[Easter(), Day(49)]),
         Holiday('Bastille Day', month=7, day=14),
         Holiday('Assumption of Mary to Heaven', month=8, day=15),
         Holiday('All Saints Day', month=11, day=1),
@@ -94,9 +104,9 @@ Méthode de calcul
 
 Une fois que vous avez préparé le dataset de référence intégrant toutes les règles mentionnées plus haut, vous devez créer deux nouvelles variables :
 
-    - délai en jours calendaire = ``date de réception`` - ``Première réponse d'ici`` 
-    - délai en jours ouvrés = ``date de réception`` - ``Première réponse d'ici`` | sans we / jours fériés.
-
+    ``delai_calendaire`` = ``Première réponse d'ici`` - ``date de réception`` 
+    
+    ``delai_jours_ouvres`` = ``Première réponse d'ici`` - ``date de réception`` | *sans week-ends / jours fériés*
 
 .. code-block:: python
     
@@ -104,33 +114,27 @@ Une fois que vous avez préparé le dataset de référence intégrant toutes les
     df['delai_calendaire'] = df['Première réponse d\'ici'] - df['Date de réception']
     
         
-    # Creating some boundaries
+    # Créer les limites calendaires, par exemple pour l'année 2021. 
     from datetime import date
 
     year = 2021
     start = date(year, 1, 1)
     end = start + pd.offsets.MonthEnd(12)
 
-    # Creating a custom calendar
+    # Instancier le calendtrier des jours fériés en France
     cal = FrBusinessCalendar()
     
-    # Getting the holidays (off-days) between two dates
+    # Lister les jours fériées entre deux dates
     holidays_fr = cal.holidays(start=start, end=end)
     
-    # Délai de réponse en jours ouvrés
+    # Définir les variables de calcul
     A = [d.date() for d in df['Date de réception']] 
     B = [d.date() for d in df['Première réponse d\'ici']]
     
-    df['delai_jours_ouvres'] = np.busday_count(A, B, holidays=holidays_fr)
-
-
-Objectif
-  L’indicateur est assorti d’un double objectif de résultat :
+    # Calculer le délai de réponse pour chaque incident en excluant les week-end et les jours fériés.
+    df['delai_jours_ouvres'] = np.busday_count(A, B, holidays=holidays_fr) 
     
-    - **Seuil 1** : au moins de 90% de réponses en 10 jours ouvrés au plus;
-    - **Seuil 2** : au moins 98,5% de réponses en un mois calendaire au plus. 
-    
-  Une exception est constituée pour les événements exceptionnels générant des réclamations de masse (plus de 100 réclamations liées à un même événement).  
+Finalement, vous devez compter le pourcentage d'incidents ayant reçu une réponse dans le délai de moins de 10 jours ouvrés (réf. à la variable ``delai_jours_ouvres``) pqr rapport au nombre total d'incidents et le pourcentage d'incidents ayant reçu une réponse en moins de 30 jours calendaires (réf. à la variable ``delai_calendaire``) par rapport au nombre total d'incidents. 
 
 Mécathisme de pénalité
   Appliqué en cas de non-respect du deuxième seuil (30 jours calendaires).
@@ -156,7 +160,7 @@ Description
   Tracer l'histogramme des délais de réponse qui fait apparaître le pourcentage de réponses jour par jour à partir du 11ème jour.
 
 Méthode de calcul
-  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :doc:`Délai de réponse aux sollicitations écrites d'usagers`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le nombre d'incidents cumulé et le pourcentage de réponses pour chaque délai puis tracer l'histogramme jour par jour à partir du 11ème jour? 
+  Pour tracer l'histogramme, récupérer les données issues de l'indicateurs :ref:`Délai de réponse aux sollicitations écrites d'usagers <target to paragraph>`, notamment les délais de réponse et le nombre d'incidents associé. Calculer le nombre d'incidents cumulé et le pourcentage de réponses pour chaque délai puis tracer l'histogramme jour par jour à partir du 11ème jour. 
  
 .. figure:: /docs/source/Annotation_tableau.png
    :width: 40%
