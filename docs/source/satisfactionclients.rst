@@ -23,7 +23,9 @@ Méthode de calcul
   
     *Power Automate est un outil permettant d'automatiser des extractions de données depuis Dynamics. Un mini ETL a été conçu spécifiquement pour l'indicateur sur le délai de réponse qui est détaillé plus loin.*
   
-  Après avoir extrait les données, vous devez prendre en compte un ensemble de règles métier qui permettent de qualifier les sollicitations écrites. L'indicateur doit prendre en compte les règles suivantes : 
+  Après avoir extrait les données, vous devez prendre en compte un ensemble de règles métier qui permettent de qualifier les sollicitations écrites. 
+  
+  L'indicateur doit **prendre en compte** les règles suivantes : 
   
   - Prendre en compte les incidents au statut ``Résolu`` et ``Actif``;
   - Prendre en compte les incidents dont la variable ``Origine``:
@@ -35,7 +37,7 @@ Méthode de calcul
     - ``Carte "Parcours le plus long``,
     - ``Content / Pas content``.
 
-  L'indicateur doit exclure les incidents suivants: 
+  L'indicateur doit **exclure** les incidents suivants: 
   
   - Exclure les incidents au statut ``Annulé``,
   - Exclure les incidents dont la variable ``Origine``:
@@ -46,6 +48,7 @@ Méthode de calcul
     - ``IoT``, 
     - ``Twitter``, 
     - ``péage``.
+    
   - Exclure les incidents de type ``Niveau 1 = DEMANDE`` et ``Niveau 2 = SAV`` où ``Niveau 4`` :
   
       - ``changement de coordonnées``, 
@@ -53,9 +56,33 @@ Méthode de calcul
       - ``matérialisé/dématérialisé``, 
       - ``rejet CB``, 
       - ``rejet prélèvement``.
-    - Exclure les incidents de type ``Niveau 1 = AUTRES`` sauf les incidents où ``Niveau 2 = "Autres" ou NULL``.
-    - Exclure les incidents dont la ``date de réception`` est enregistrée en année précédente (N-1). Par exemple, si vous calculez l'indicateur pour l'année 2021, ne pas prendre en compte 
-    - Exclure les incidents "enfant" où la variable ``Incident parent`` fait référence à un autre incident pour ne pas comptabiliser deux fois la même sollicitation.
+  - Exclure les incidents de type ``Niveau 1 = AUTRES`` sauf les incidents où ``Niveau 2 = "Autres" ou NULL``.
+  - Exclure les incidents dont la ``date de réception`` est enregistrée en année précédente (N-1). Par exemple, si vous calculez l'indicateur pour l'année 2021, ne pas prendre en compte 
+  - Exclure les incidents "enfant" où la variable ``Incident parent`` fait référence à un autre incident pour ne pas comptabiliser deux fois la même sollicitation.
+  
+  Le premier objectif de l'indicateur est exprimé en jours ouvrés, ce qui signifie qu'il faut exclure les week-ends et tous les jours fériés de l'année en cours d'étude. Le second objectif est exprimé en jours calendaires (y compris les week-ends et les jours fériés). 
+
+.. code-block:: python
+   :caption:
+    class FrBusinessCalendar(AbstractHolidayCalendar):
+      """ Custom Holiday calendar for France based on https://en.wikipedia.org/wiki/Public_holidays_in_France
+        - 1 January: New Year's Day
+        - Moveable: Easter Monday (Monday after Easter Sunday)
+        - 1 May: Labour Day
+        - 8 May: Victory in Europe Day
+        - Moveable Ascension Day (Thursday, 39 days after Easter Sunday)
+        - Moveable Pentecôte Day (Mondayn 49 days after Easter Sunday)
+        - 14 July: Bastille Day
+        - 15 August: Assumption of Mary to Heaven
+        - 1 November: All Saints' Day
+        - 11 November: Armistice Day
+        - 25 December: Christmas Day
+      """
+  
+Une fois que vous avez préparé le dataset de référence intégrant toutes les règles mentionnées plus haut, vous devez créer deux nouvelles variables :
+    - délai en jours ouvrés = ``date de réception`` - ``Première réponse d'ici`` | sans we / jours fériés.
+    - délai en jours calendaire = ``date de réception`` - ``Première réponse d'ici`` 
+ 
 
 Objectif
   L’indicateur est assorti d’un double objectif de résultat :
