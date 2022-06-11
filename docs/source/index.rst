@@ -2,6 +2,8 @@
 Bienvenue dans la documentation en ligne d'ATMB !
 ==================================================
 
+Bienvenue dans la documentation en ligne d'ATMB !
+--------------------------------------------------
 
 .. note::
 
