@@ -124,7 +124,7 @@ Une fois que vous avez préparé le dataset de référence intégrant toutes les
     # Instancier le calendtrier des jours fériés en France
     cal = FrBusinessCalendar()
     
-    # Lister les jours fériées entre deux dates
+    # Lister les jours fériés entre deux dates
     holidays_fr = cal.holidays(start=start, end=end)
     
     # Définir les variables de calcul
@@ -134,16 +134,16 @@ Une fois que vous avez préparé le dataset de référence intégrant toutes les
     # Calculer le délai de réponse pour chaque incident en excluant les week-end et les jours fériés.
     df['delai_jours_ouvres'] = np.busday_count(A, B, holidays=holidays_fr) 
     
-Finalement, vous devez compter le pourcentage d'incidents ayant reçu une réponse dans le délai de moins de 10 jours ouvrés (réf. à la variable ``delai_jours_ouvres``) pqr rapport au nombre total d'incidents et le pourcentage d'incidents ayant reçu une réponse en moins de 30 jours calendaires (réf. à la variable ``delai_calendaire``) par rapport au nombre total d'incidents. 
+Finalement, vous devez compter **le pourcentage d'incidents ayant reçu une réponse dans le délai de moins de 10 jours ouvrés** (réf. à la variable ``delai_jours_ouvres``) par rapport au nombre total d'incidents et **le pourcentage d'incidents ayant reçu une réponse en moins de 30 jours calendaires** (réf. à la variable ``delai_calendaire``) par rapport au nombre total d'incidents. 
 
 Mécathisme de pénalité
   Appliqué en cas de non-respect du deuxième seuil (30 jours calendaires).
 
 Propriétaire de données
-  Direction Clientèle
+  Direction Clientèle / Pôle Relation Client.
 
 Source de données
-  Dynamics. L'extraction de données est faite à partir de l'ETL de Power Automate. La spécification de l'ETL est disponible dans le document (A COMPLETER).
+  Dynamics + Power Automate. La spécification de l'ETL est disponible dans le document (A COMPLETER).
 
 Rapport BO
   Non disponible.
@@ -167,11 +167,14 @@ Méthode de calcul
    :align: center
    :alt: Données de calcul pour l'histogramme. 
 
+*Données de calcul pour l'histogramme.*
 
 .. figure:: /docs/source/Annotation_histo.png
    :width: 80%
    :align: center
    :alt: Histogramme 
+    
+ *Histogramme: "% de réponses apportés en 2021"*
 
 Objectif
   Non défini.
@@ -202,7 +205,7 @@ Description
 Périmètre mesuré
   L'ensemble des réclamations adressées à ATMB. Dans le bilan des réclamations on distingue deux types de sollicitation :
   
-  - Réclamations : addréssées par les usagers à ATMB, ce sont les incidents de type RECLAMATION (la variable ``Niveau 1 = RECLAMATIONS``). Pour compter les réclamations, récupérer les données issues de l'indicateurs :doc:`Délai de réponse aux sollicitations écrites d'usagers`.
+  - Réclamations : addréssées par les usagers à ATMB, ce sont les incidents de type RECLAMATION (la variable ``Niveau 1 = RECLAMATIONS``). Pour compter les réclamations, récupérer les données issues de l'indicateurs :ref:`Délai de réponse aux sollicitations écrites d'usagers`.
   - Régularisations : les transactions effectuées entre les SCA. Tous les mois les SCA envoient un fichier Excel comprenant toutes les régularisations faites pour le compte ATMB. Le service de facturation d'ATMB transmet également les régularisations passées.  
 
 Méthode de calcul
